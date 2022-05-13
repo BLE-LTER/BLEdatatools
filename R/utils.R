@@ -13,6 +13,7 @@ decide_entities <- function(ids = NULL) {
   w <- c(2, 3, 4, 11, 13, 14) # water
   s <- c(12, 14, 18) # sediment
 
+
  if (is.null(ids)) ids <- cp
 
   stopifnot(is.numeric(ids), is.vector(ids))
@@ -45,6 +46,7 @@ decide_entities <- function(ids = NULL) {
   # construct pkgs ids
   pkg_ids <- paste0("knb-lter-ble.", ids, ".", rev)
 
+
   message("Asking EDI for newest data...")
 
   # loop over pkg ids and ask for ALL entity IDs and names from each pkg
@@ -63,5 +65,4 @@ decide_entities <- function(ids = NULL) {
 
   # realized I need the pkg id too not just the entity id
   return(eids)
-
 }

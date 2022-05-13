@@ -1,17 +1,23 @@
-#' Title
+
+#' Download BLE data files
 #'
-#' @param ids Vector of data sets IDs, such as 1, 2, 4
-#' @param path path to save CSVs to
+#' @param ids (numeric) Vector of dataset IDs to grab
+#' @param path (character) Path to write CSVs to
+#' @param write (boolean) Whether to write to file
 #'
-#' @return
+#' @return (list) A list of data frames. Optionally, CSVs files in specified path
 #' @export
 #'
 #' @examples
 download_data <- function(ids = NULL, path = NULL, write = F) {
   if (is.null(path))
     path <- getwd()
+
+  # checking if path exists
   stopifnot(dir.exists(path))
+
   e <- decide_entities(ids)
+
   message("Downloading data files...")
 
 
