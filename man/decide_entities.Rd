@@ -2,16 +2,16 @@
 % Please edit documentation in R/utils.R
 \name{decide_entities}
 \alias{decide_entities}
-\title{Title}
+\title{Get entity names and IDs from newest revisions of BLE data sets}
 \usage{
 decide_entities(ids = NULL)
 }
 \arguments{
-\item{ids}{}
+\item{ids}{(numeric) Vector of dataset IDs to grab}
 }
 \value{
-
+(list) A nested list. 1st-level list item corresponds to dataset, 2nd-level items correspond to entities within a dataset and contain a string of the entity Id. List items are named accordingly (dataset after the packageId and entities after the entity name).
 }
 \description{
-Title
+Get entity names and IDs from newest revisions of BLE data sets
 }
