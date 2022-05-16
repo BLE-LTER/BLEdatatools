@@ -4,8 +4,6 @@
 #' all BLE package id ("scope.identifier.revision" format), title, publication dates, and the package number from
 #' package id.
 #'
-#' Basically just the EDIutils::search_data_packages function but I defined the scope of the query for users (like me)
-#' that don't know how to write a query.
 #'
 #' @param fields (string) Searchable metadata fields in EDI repository to include query that produces output.
 #' The way this function is written now, this string must follow the Solr query syntex (e.g. "id, packageid, title").
