@@ -1,15 +1,18 @@
 
+
 #' Download BLE data files
 #'
 #' @param ids (numeric) Vector of dataset IDs to grab
 #' @param path (character) Path to write CSVs to
 #' @param write (boolean) Whether to write to file
 #'
-#' @return (list) A list of data frames. Optionally, CSVs files in specified path
+#' @return (list) A nested list of data frames. 1st-level list item corresponds to dataset, 2nd-level items correspond to entities within a dataset and contain a data.frame of the data entity. List items are named accordingly (dataset after the packageId and entities after the entity name). Optionally, if write=T, functions also write to CSVs files in specified path. File names are the full package Id, followed by two underscores, followed by the full entity name.
 #' @export
 #'
 #' @examples
-download_data <- function(ids = NULL, path = NULL, write = F) {
+download_data <- function(ids = NULL,
+                          path = NULL,
+                          write = F) {
   if (is.null(path))
     path <- getwd()
 
@@ -21,41 +24,61 @@ download_data <- function(ids = NULL, path = NULL, write = F) {
   message("Downloading data files...")
 
 
-# TODO: need to retain names
+  # if you read this bit of code
+  # beware that all the "raw"s are different
+  # lexical scoping!
+
+  # and I dislike the IFs sequences I'm resorting to here
+  # would like more elegance
   raw <- lapply(seq_along(e), function(x) {
     if (length(e[[x]]) > 1) {
       # not particularly proud of this sequence
-      lapply(seq_along(e[[x]]), function(y) {
-        EDIutils::read_data_entity(packageId = names(e)[x],
+      raw <- lapply(seq_along(e[[x]]), function(y) {
+        raw <- EDIutils::read_data_entity(packageId = names(e)[x],
                                    entityId = e[[x]][[y]])
+        return(raw)
       })
+
     }
     else {
-      EDIutils::read_data_entity(packageId = names(e)[x],
-                                 entityId = e[[x]])
+      raw <- list(EDIutils::read_data_entity(packageId = names(e)[x],
+                                 entityId = e[[x]]))
     }
+    names(raw) <- names(e[[x]]) # attach entity names
+    return(raw)
   })
 
-  # this is not a good way
-  # there MUST be a better way to do this and also retain file names.
-  # TODO: Ask colin at EDI
-   dfs <- invisible(rrapply::rrapply(object = raw,
-                           f = readr::read_csv,
-                           how = "list",
-                           show_col_types = F)) # argument to read_csv
+  # attach pkg ids
+  names(raw) <- names(e)
 
-   # writing to path is optional???
-   # doesn't work right now
-   if (!is.null(path) && write) {
-     message("Writing data to files...")
-     rrapply::rrapply(object = dfs,
-                      f = function(x) {
-                        readr::write_csv(x = x,
-                                         file = names[e][.xposition])
-                      },
-                      how = "list")
-   }
+  dfs <- invisible(rrapply::rrapply(
+    object = raw,
+    f = readr::read_csv,
+    how = "list",
+    show_col_types = F # argument to read_csv
+  ))
 
-   message("Done.")
+  # writing to path is optional???
+  # doesn't work right now
+  if (!is.null(path) && write) {
+    message("Writing data to files...")
+
+    lapply(seq_along(dfs), function(x) {
+      ds <- dfs[[x]]
+      if (length(ds) > 1) {
+        lapply(seq_along(ds), function(y) {
+          readr::write_csv(x = ds[[y]],
+                    file = file.path(path, paste0(names(dfs)[[x]], "__", names(ds)[[y]], ".csv")))
+        })
+      } else {
+        readr::write_csv(x = ds[[1]],
+                  file = file.path(path, paste0(names(dfs)[[x]], "__", names(ds)[[1]], ".csv"))
+                )
+      }
+
+    })
+  }
+
+  message("Done.")
   return(dfs)
 }
