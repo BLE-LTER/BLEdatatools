@@ -1,14 +1,14 @@
 #' Download any BLE file on EDI
 #'
-#' @param package_id (numeric) Package identifier number that correspondes with the EDI package ID.
+#' @param package_id (numeric) Package identifier number that corresponds with the EDI package ID.
 #' @param entity_number Idea that if this field is left blank, download all files within the package?
 #'
-#' @return CSV file(s) of entity/entities
+#' @return Zip folder with all package data
 #' @export
 #'
 #' @examples
 
-download_any_data <- function(identifier, entity_number = NULL, path = NULL) {
+download_any_ble_data <- function(identifier, entity_number = NULL, path = NULL) {
 
   if (is.null(path))
     path <- getwd()
@@ -46,8 +46,11 @@ download_any_data <- function(identifier, entity_number = NULL, path = NULL) {
 
   message(paste0("The newest version of your package is: ", packageID, "."))
 
-  #entity_names <-
-
+  # if entity number is not specified, download the who package in a zip folder
+  if (is.null(entity_number)) {
+   transaction <- EDIutils::create_data_package_archive(packageID)
+   EDIutils::read_data_package_archive(packageID, transaction, path = path)
+  }
 
 }
 
