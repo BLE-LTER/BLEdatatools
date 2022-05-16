@@ -1,20 +1,17 @@
-#' Title
+#' Get entity names and IDs from newest revisions of BLE data sets
 #'
-#' @param ids
+#' @param ids (numeric) Vector of dataset IDs to grab
 #'
-#' @return
-#' @export
+#' @return (list) A nested list. 1st-level list item corresponds to dataset, 2nd-level items correspond to entities within a dataset and contain a string of the entity Id. List items are named accordingly (dataset after the packageId and entities after the entity name).
 #'
 #' @examples
 decide_entities <- function(ids = NULL) {
   # list of BLE Core Program ids. do we need to update them when new ids come out? seems not optimal and NOT good practice
   cp <-
     c(2, 3, 4, 11, 12, 13, 14, 18) # only discrete samples, no moorings/CDOM
-  w <- c(2, 3, 4, 11, 13, 14) # water
-  s <- c(12, 14, 18) # sediment
 
-
- if (is.null(ids)) ids <- cp
+  if (is.null(ids))
+    ids <- cp
 
   stopifnot(is.numeric(ids), is.vector(ids))
 
@@ -46,18 +43,33 @@ decide_entities <- function(ids = NULL) {
   # construct pkgs ids
   pkg_ids <- paste0("knb-lter-ble.", ids, ".", rev)
 
-
   message("Asking EDI for newest data...")
 
   # loop over pkg ids and ask for ALL entity IDs and names from each pkg
   allids <- lapply(pkg_ids, EDIutils::read_data_entity_names)
 
-# filter elist by Ids supplied
+  # filter elist by Ids supplied
   elist <- elist[which(ids %in% cp)]
 
   # get just the entity IDs we want
   eids <- sapply(seq_along(allids), function(x) {
-    allids[[x]][elist[[x]], 1]
+    if (length(elist[[x]]) > 1) {
+      e <- list()
+      for (i in elist[[x]]) {
+      e[[i]] <- allids[[x]][elist[[x]], 1][[i]]
+      names(e)[[i]] <- allids[[x]][elist[[x]], 2][[i]]
+      }
+    } else {
+      e <- list(allids[[x]][elist[[x]], 1])
+    names(e) <- allids[[x]][elist[[x]], 2]
+    }
+
+    return(e)
+  })
+
+
+  enames <- sapply(seq_along(allids), function(x) {
+    allids[[x]][elist[[x]], 2]
   })
 
   # eids and pkg_ids should be the same length and in the correct orders
