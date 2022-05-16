@@ -27,7 +27,7 @@ search_ble_packages <- function(fields = 'id,packageid,title,pubdate', env = 'pr
   df <- EDIutils::search_data_packages(query = query, env = env)
 
   # column including BLE package id number
-  id_number <- sub(".*knb-lter-ble.", "", df$id)
+  id_number <- as.numeric(sub(".*knb-lter-ble.", "", df$id))
 
   # bind new id column to data frame
   df <- cbind(df, id_number)
