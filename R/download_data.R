@@ -2,9 +2,10 @@
 
 #' Download BLE data files
 #'
-#' @param ids (numeric) Vector of dataset IDs to grab
-#' @param path (character) Path to write CSVs to
-#' @param write (boolean) Whether to write to file
+#' @param ids (numeric) Vector of dataset IDs to grab, defaults to get all data
+#' @param path (character) Path to write CSVs to, defaults to working directory
+#' @param write (boolean) Whether to write to file, defaults to false
+#' @param metadata (boolean) whether to get metadata, defaults to true
 #'
 #' @return (list) A nested list of data frames. 1st-level list item corresponds to dataset, 2nd-level items correspond to entities within a dataset and contain a data.frame of the data entity. List items are named accordingly (dataset after the packageId and entities after the entity name). Optionally, if write=T, functions also write to CSVs files in specified path. File names are the full package Id, followed by two underscores, followed by the full entity name.
 #' @export
@@ -12,7 +13,8 @@
 #' @examples
 download_data <- function(ids = NULL,
                           path = NULL,
-                          write = F) {
+                          write = F,
+                          metadata = TRUE) {
   if (is.null(path))
     path <- getwd()
 
@@ -78,7 +80,17 @@ download_data <- function(ids = NULL,
 
     })
   }
+  output = list(data=dfs)
+  
+  #return metadata
+  if (metadata== TRUE){m = lapply(names(e), FUN = EDIutils::read_metadata) 
+  names(m)= names(e)
+  output$metadata=m}
+  
+  
+  
+  
 
   message("Done.")
-  return(dfs)
+  return(output)
 }
