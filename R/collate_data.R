@@ -31,7 +31,7 @@ collate_data <- function(data, output = "object") {
 
 
   # sediment pigments long to wide
-  data[[5]][[1]] <- tidyr::pivot_wider(data[[5]][[1]], names_from = pigment, values_from = c(areal_concentration_mg_m2, mass_concentration_ug_g))
+  data[[5]][[1]] <- tidyr::pivot_wider(data[[5]][[1]], names_from = pigment, values_from = c(areal_concentration_mg_m2, mass_concentration_ug_g, flag))
 
   # need to NOT duplicate common columns like node/lagoon/season/lat/lon
 
