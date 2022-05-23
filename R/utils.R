@@ -78,3 +78,24 @@ decide_entities <- function(ids = NULL) {
   # realized I need the pkg id too not just the entity id
   return(eids)
 }
+
+#' Preprocess tables before putting them info the join
+#' @description Rename any date_time column to date_collected, and remove the time portion
+#'
+#' @param df (data.frame) ONE data.frame containing BLE LTER water/sediment core data, as downloaded from EDI without any processing.
+#' @param ysi (logical) Set this to TRUE when the data is YSI. Returns date_collected as usual, plus a date_time_YSI column that retains the time.
+#'
+#' @return (data.frame) A data.frame
+#'
+#' @examples
+preprocess <- function(df, ysi = F) {
+  if ("date_time" %in% names(df) && ysi) {
+  df <- dplyr::rename(df, date_time_ysi = date_time)
+  df$date_collected <- as.Date(df$date_time_ysi)
+  }
+  if ("date_time" %in% names(df) && !ysi) {
+  df <- dplyr::rename(df, date_collected = date_time)
+  df$date_collected <- as.Date(df$date_collected)
+  }
+  return(df)
+}
