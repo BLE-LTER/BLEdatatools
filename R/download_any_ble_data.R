@@ -1,11 +1,14 @@
-#' Get BLE LTER data package or data entity from EDI
+#' Download a BLE LTER data package or data entity from EDI
 #'
-#' @param identifier (numeric) Package identifier number that corresponds with the EDI package ID
-#' @param entity_number (numeric). Entity identifier number. Optional.
+#' @param identifier (numeric) Package identifier number that corresponds with the EDI package ID. Can only
+#' specify one identifier at a time.
+#' @param entity_number (numeric). Entity identifier number. Optional. Can only specify one entity at a time.
+#' Entity must be a .csv file or function will produce an error.
 #' @param path (character) Path to write files to. If left blank, will default to the working directory.
 #' @param write (boolean) Do you want to write the entity as a .csv file, or do you want to save it as an R object.
 #'
-#' @return Zip folder containing all package data entities, .csv file of specified data entity, or dataframe
+#' @return Zip folder containing all package data entities, one .csv file containing specified data entity,
+#' or a data.frame containing the specified data entity.
 #' @export
 #'
 #' @examples download_any_ble_data(identifier = 1, entity_number = 3) # download the third entity in package 1 as a .csv
@@ -13,7 +16,10 @@
 #' @examples DOC <- download_any_ble_data(2, 1) # save DOC/TDN data (package 2, entity 1) as an R object
 #'
 
-download_any_ble_data <- function(identifier, entity_number = NULL, path = NULL, write = TRUE) {
+download_any_ble_data <- function(identifier,
+                                  entity_number = NULL,
+                                  path = NULL,
+                                  write = NULL) {
 
   if (is.null(path))
     path <- getwd()
@@ -24,7 +30,7 @@ download_any_ble_data <- function(identifier, entity_number = NULL, path = NULL,
   # add an error message here if user does not supply a proper package id number
   stopifnot(is.numeric(identifier))
 
-  possible_ids <- list_data_package_identifiers(scope = "knb-lter-ble")
+  possible_ids <- EDIutils::list_data_package_identifiers(scope = "knb-lter-ble")
 
   # error message if any ID supplied is not in our list
 
@@ -53,7 +59,7 @@ download_any_ble_data <- function(identifier, entity_number = NULL, path = NULL,
   # define the packageId in scope, identifier, revision format
   packageId <- paste0("knb-lter-ble.", identifier, ".", rev)
 
-  # if entity number is not specified, download the who package in a zip folder
+  # if entity number is not specified, download the whole package in a zip folder
   if (is.null(entity_number)) {
    transaction <- EDIutils::create_data_package_archive(packageId)
    message(paste0("Downloading a zip file containing the newest version of the package: ", packageId, "."))
