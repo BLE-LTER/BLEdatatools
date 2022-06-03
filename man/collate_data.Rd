@@ -4,12 +4,12 @@
 \alias{collate_data}
 \title{Collate data from different water/sediment BLE LTER data sets}
 \usage{
-collate_data(data, output = "excel")
+collate_data(ids = NULL, output = "object", path = NULL)
 }
 \arguments{
-\item{data}{(list) Nested list of data frames, output from download_data}
+\item{ids}{(numeric) Vector of dataset IDs to grab, default is to get all data}
 
-\item{output}{(character) Choice of "excel", "csv", or "object". Returns one Excel file, many CSV files, or an in-memory list, respectively. Defaults to "excel".}
+\item{output}{(character) Choice of "excel", "csv", or "object". Returns one Excel file, many CSV files, or an in-memory R list of data frames, respectively. Defaults to "object".}
 }
 \value{
 

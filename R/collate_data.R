@@ -1,15 +1,18 @@
 #' Collate data from different water/sediment BLE LTER data sets
 #' @description
 #'
-#' @param data (list) Nested list of data frames, output from download_data
-#' @param output (character) Choice of "excel", "csv", or "object". Returns one Excel file, many CSV files, or an in-memory list, respectively. Defaults to "object".
+#' @param ids (numeric) Vector of dataset IDs to grab, default is to get all data
+#' @param output (character) Choice of "excel", "csv", or "object". Returns one Excel file, many CSV files, or an in-memory R list of data frames, respectively. Defaults to "object".
 #'
 #' @return
 #' @export
 #'
 #' @examples
-collate_data <- function(data, output = "object") {
-  stopifnot(is.list(data), output %in% c("excel", "csv", "object"))
+collate_data <- function(ids = NULL, output = "object", path = NULL) {
+  if (is.null(path)) path <- getwd()
+  stopifnot(is.numeric(ids) || is.null(ids), output %in% c("excel", "csv", "object"))
+  data <- get_uncollated_dfs(ids = ids, path = path, metadata = TRUE)
+  data <- data[["data"]]
 
   w <- c(2, 3, 4, 11, 13, 14) # IDs for water data
   s <- c(12, 14, 18) # IDs for sediment data
