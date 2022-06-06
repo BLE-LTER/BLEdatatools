@@ -1,6 +1,6 @@
 #' Download a BLE LTER data package or data entity from EDI
 #'
-#' The function finds the most recent package or entity from EDI.
+#' The function finds the most recent package or entity from EDI. Can download an entire package as a zip file, or save an entity as a .csv or R object.
 #'
 #' @param identifier (numeric) Package identifier number that corresponds with the EDI package ID. Can only specify one identifier at a time.
 #' @param entity_number (numeric). Entity identifier number. Optional. Can only specify one entity at a time. Entity must be a .csv file or function will produce an error.
@@ -108,6 +108,7 @@ download_data <- function(identifier,
     if (write) {
 
       # write a csv to the specified path or working directory
+      # TODO: include entity name in the file
       message(paste0("Writing the entity titled '",
                      entityName,
                      "' from ",

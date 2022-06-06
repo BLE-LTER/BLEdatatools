@@ -2,20 +2,33 @@
 % Please edit documentation in R/download_data.R
 \name{download_data}
 \alias{download_data}
-\title{Download BLE data files}
+\title{Download a BLE LTER data package or data entity from EDI}
 \usage{
-download_data(ids = NULL, path = NULL, write = F)
+download_data(identifier, entity_number = NULL, path = NULL, write = FALSE)
 }
 \arguments{
-\item{ids}{(numeric) Vector of dataset IDs to grab}
+\item{identifier}{(numeric) Package identifier number that corresponds with the EDI package ID. Can only specify one identifier at a time.}
 
-\item{path}{(character) Path to write CSVs to}
+\item{entity_number}{(numeric). Entity identifier number. Optional. Can only specify one entity at a time. Entity must be a .csv file or function will produce an error.}
 
-\item{write}{(boolean) Whether to write to file}
+\item{path}{(character) Path to write files to. If left blank, will default to the working directory.}
+
+\item{write}{(boolean) If true, writes the entity as a .csv file. Otherwise, saves the entity as an R object.}
 }
 \value{
-(list) A nested list of data frames. 1st-level list item corresponds to dataset, 2nd-level items correspond to entities within a dataset and contain a data.frame of the data entity. List items are named accordingly (dataset after the packageId and entities after the entity name). Optionally, if write=T, functions also write to CSVs files in specified path. File names are the full package Id, followed by two underscores, followed by the full entity name.
+Zip folder containing all package data entities, one .csv file containing specified data entity, or a data.frame containing the specified data entity.
 }
 \description{
-Download BLE data files
+The function finds the most recent package or entity from EDI.
+}
+\examples{
+# download the third entity in package 1 as a .csv
+download_data(identifier = 1, entity_number = 3)
+
+# download all entities in package 1 in a zip file
+download_data(identifier = 1)
+
+# save DOC/TDN data (package 12, entity 1) as an R object
+DOC <- download_data(identifier = 12, 1)
+
 }
