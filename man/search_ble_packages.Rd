@@ -2,24 +2,25 @@
 % Please edit documentation in R/search_ble_packages.R
 \name{search_ble_packages}
 \alias{search_ble_packages}
-\title{Search all BLE LTER packages}
+\title{Search all BLE LTER packages on EDI}
 \usage{
-search_ble_packages(fields = "id,packageid,title,pubdate", env = "production")
+search_ble_packages(fields = "id,packageid,title", env = "production")
 }
 \arguments{
-\item{fields}{(string) Searchable metadata fields in EDI repository to include query that produces output.
-The way this function is written now, this string must follow the Solr query syntex (e.g. "id, packageid, title").}
+\item{fields}{(character) Metadata fields in EDI repository to include query that produces output. This string must follow the Solr query syntex.
+Default is to provide the id, packageid, and title.}
 
-\item{env}{(string) Repository environment. Can be "production", "staging", or "development".}
+\item{env}{(character) Repository environment. Can be "production", "staging", or "development".}
 }
 \value{
-
+(data.frame) Default parameters return the fields: id, packageid, title, identifier.
 }
 \description{
 Modify EDI utils search_data_packages function to return only BLE LTER data. Default is to provide a dataframe with
-all BLE package id ("scope.identifier.revision" format), title, publication dates, and the package number from
+all BLE package id ("scope.identifier.revision" format), title, and the package identifier from
 package id.
 }
 \examples{
+packages <- search_ble_packages()
 
 }
