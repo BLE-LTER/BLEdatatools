@@ -186,12 +186,15 @@ get_uncollated_dfs <- function(ids = NULL,
 #' @examples
 preprocess <- function(df, ysi = F) {
   if ("date_time" %in% colnames(df) && ysi) {
-  df <- dplyr::rename(df, date_time_ysi = date_time)
-  df$date_collected <- as.Date(df$date_time_ysi)
+  # df <- dplyr::rename(df, date_time_ysi = date_time)
+  # df$date_collected <- as.Date(df$date_time_ysi)
   }
   if ("date_time" %in% colnames(df) && !ysi) {
-  df <- dplyr::rename(df, date_collected = date_time)
-  df$date_collected <- as.Date(df$date_collected)
+  # df <- dplyr::rename(df, date_collected = date_time)
+  df$date_time <- as.Date(df$date_time)
+  }
+  if ("date_collected" %in% colnames(df)) {
+    df <- dplyr::rename(df, date_time = date_collected)
   }
   df$station <- gsub("STL", "SSL", df$station)
   return(df)
