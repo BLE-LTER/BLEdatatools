@@ -185,11 +185,11 @@ get_uncollated_dfs <- function(ids = NULL,
 #'
 #' @examples
 preprocess <- function(df, ysi = F) {
-  if ("date_time" %in% names(df) && ysi) {
+  if ("date_time" %in% colnames(df) && ysi) {
   df <- dplyr::rename(df, date_time_ysi = date_time)
   df$date_collected <- as.Date(df$date_time_ysi)
   }
-  if ("date_time" %in% names(df) && !ysi) {
+  if ("date_time" %in% colnames(df) && !ysi) {
   df <- dplyr::rename(df, date_collected = date_time)
   df$date_collected <- as.Date(df$date_collected)
   }
