@@ -30,9 +30,9 @@ collate_data <- function(ids = NULL, output = "object", path = NULL) {
   # data[[2]][[1]] <- dplyr::rename(data[[2]][[1]], date_time_YSI = date_time)
 
   data[[2]][[1]] <- preprocess(data[[2]][[1]], ysi = TRUE)
-  data <- rrapply::rrapply(data, preprocess, how = "replace", classes = "data.frame")
+  data <- rrapply::rrapply(data, f = preprocess, classes = "data.frame", how = "replace")
   # why is rrapply not working???
-
+  # return(data)
 
   # sediment pigments long to wide
   data[[5]][[1]] <- tidyr::pivot_wider(data[[5]][[1]], names_from = pigment, values_from = c(areal_concentration_mg_m2, mass_concentration_ug_g, flag))
@@ -67,15 +67,20 @@ collate_data <- function(ids = NULL, output = "object", path = NULL) {
     purrr::reduce(
       purrr::compact(wlist), #remove the NULL list items
       dplyr::full_join,
-      # by = c("station", "date_collected", "water_column_position"),
+      by = c("node", "lagoon", "station", "season", "date_collected", "water_column_position", "latitude", "longitude", "station_name", "habitat_type", "station_sampling_priority"),
       copy = TRUE
     )
+
+  # remove redundant collection_method columns
+  cols <- grep("collection_method", colnames(wdf))
+  wdf <- subset(wdf, select = -cols[2:length(cols)])
 
   # sediment
 
   sdf <- purrr::reduce(
     purrr::compact(slist), # remove NULL list items
     dplyr::full_join,
+    by = c("node", "lagoon", "station", "season", "date_collected", "latitude", "longitude", "station_name", "habitat_type", "station_sampling_priority"),
     copy = TRUE
   )
 
