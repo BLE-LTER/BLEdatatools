@@ -19,7 +19,7 @@ download_data(identifier, entity_number = NULL, path = NULL, write = FALSE)
 Zip folder containing all package data entities, one .csv file containing specified data entity, or a data.frame containing the specified data entity.
 }
 \description{
-The function finds the most recent package or entity from EDI.
+The function finds the most recent package or entity from EDI. Can download an entire package as a zip file, or save an entity as a .csv or R object.
 }
 \examples{
 # download the third entity in package 1 as a .csv

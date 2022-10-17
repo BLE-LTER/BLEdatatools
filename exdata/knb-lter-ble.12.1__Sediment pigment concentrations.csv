@@ -1,0 +1,289 @@
+node,lagoon,station,season,date_collected,pigment,areal_concentration_mg_m2,mass_concentration_ug_g,flag,station_name,latitude,longitude,habitat_type,station_sampling_priority
+Central,Simpson,SILD1,open water,2018-07-26,Fucoxanthin,40.9491584312322,0.727836639413677,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2018-07-26,Alloxanthin,0.667909366522396,0.0118715237964892,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2018-07-26,Zeaxanthin,0.602687873301267,0.0107122669457452,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2018-07-26,Pheophytin,26.75510495185,0.47554935000721,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2018-07-26,Chlorophyllide,1.56517439468447,0.0278196503949301,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2018-07-26,Pheophorbide,5.26651136078807,0.0936077828487524,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2018-07-26,Chlorophyll a,81.7652433676898,1.45330801006623,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2018-07-26,Peridinin,0.28879098874073,0.00513301544623909,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,under ice,2019-04-21,Chlorophyllide,2.97908006020572,0.0448103477183199,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,under ice,2019-04-21,Pheophorbide,10.5289600732871,0.158373173080727,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,under ice,2019-04-21,Chlorophyll a,45.1348320926011,0.678903379366641,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,under ice,2019-04-21,Pheophytin,14.1373123275967,0.212648827288769,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,under ice,2019-04-21,Peridinin,0.597029304970414,0.00898031949900121,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,under ice,2019-04-21,Fucoxanthin,21.8665074302837,0.328908851569627,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,under ice,2019-04-21,Alloxanthin,0.544419261404262,0.00818897643401743,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,under ice,2019-04-21,Zeaxanthin,1.16041109894393,0.0174545241447068,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,break up,2019-06-29,Alloxanthin,0.103859084724238,0.00216971938984601,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,break up,2019-06-29,Zeaxanthin,0.124328375941876,0.00259734320503018,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,break up,2019-06-29,Fucoxanthin,6.41240197271552,0.13396144335981,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,break up,2019-06-29,Pheophytin,2.32097323959516,0.0484874352073709,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,break up,2019-06-29,Peridinin,0.152010188729233,0.00317564375630395,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,break up,2019-06-29,Chlorophyllide,0.493284564553349,0.0103052042800582,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,break up,2019-06-29,Pheophorbide,3.34876286936758,0.0699589809495745,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,break up,2019-06-29,Chlorophyll a,11.3107936848786,0.236293709286865,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2019-08-05,Pheophytin,16.8758620384989,0.408102769268121,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2019-08-05,Alloxanthin,1.04097687934027,0.0251735612814147,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2019-08-05,Zeaxanthin,1.02235346125683,0.0247231980065933,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2019-08-05,Peridinin,0.247128791630669,0.00597622474041814,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2019-08-05,Fucoxanthin,57.3472486079392,1.38680743617226,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2019-08-05,Chlorophyllide,7.87840848380032,0.190520656801385,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2019-08-05,Pheophorbide,14.3577057377784,0.347207120949264,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2019-08-05,Chlorophyll a,98.698558824224,2.38679097322848,OK,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILS1,break up,2019-06-28,Pheophorbide,12.8997279669413,0.341153703986096,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,break up,2019-06-28,Chlorophyll a,87.6745234739398,2.31869141000519,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,break up,2019-06-28,Pheophytin,98.3951800680041,2.60221612584423,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,break up,2019-06-28,Chlorophyllide,2.93471760527854,0.0776132476405529,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,break up,2019-06-28,Fucoxanthin,12.7335239201282,0.336758175155326,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,break up,2019-06-28,Alloxanthin,2.26993509010892,0.0600320228289505,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,break up,2019-06-28,Zeaxanthin,10.8122198540648,0.28594625103562,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,break up,2019-06-28,Peridinin,0.272445155787389,0.00720524295304001,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,open water,2019-08-05,Chlorophyllide,12.5003664461068,0.143098078695402,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,open water,2019-08-05,Pheophorbide,17.8055429742217,0.203829143787468,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,open water,2019-08-05,Chlorophyll a,167.064514410033,1.91247281696303,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,open water,2019-08-05,Pheophytin,26.7309562069045,0.306002907305992,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,open water,2019-08-05,Peridinin,0.389662001385908,0.00446065993179701,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,open water,2019-08-05,Fucoxanthin,69.6154474427559,0.79692357976287,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,open water,2019-08-05,Alloxanthin,0.651769126478728,0.00746113405188486,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,open water,2019-08-05,Zeaxanthin,1.31468720580072,0.0150498958607811,OK,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Stefansson,STLD1,under ice,2019-04-20,Fucoxanthin,4.84101892861823,0.0752363114809773,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,under ice,2019-04-20,Alloxanthin,0.0361053854326349,5.6112898226692e-4,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,under ice,2019-04-20,Zeaxanthin,0.0420986620319019,6.5427301488957e-4,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,under ice,2019-04-20,Pheophytin,1.02384410584492,0.0159119919155734,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,under ice,2019-04-20,Peridinin,0.0998214561190848,0.00155136723813716,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,under ice,2019-04-20,Chlorophyll a,7.50784117230165,0.116682517733972,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,under ice,2019-04-20,Chlorophyllide,0.55248395941246,0.00858638560838345,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,under ice,2019-04-20,Pheophorbide,1.45910336442636,0.0226765391393041,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,break up,2019-06-26,Chlorophyll a,20.4052618682446,0.389360129211766,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,break up,2019-06-26,Pheophytin,8.39766081250611,0.160238781552831,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,break up,2019-06-26,Peridinin,0.0888854252345104,0.00169605471754374,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,break up,2019-06-26,Fucoxanthin,11.4814090263396,0.21908088859108,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,break up,2019-06-26,Alloxanthin,0.135958906626403,0.00259428072001021,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,break up,2019-06-26,Zeaxanthin,0.426067433857986,0.00812994570572214,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,break up,2019-06-26,Chlorophyllide,0.737178390296354,0.0140663655850745,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,break up,2019-06-26,Pheophorbide,4.13742897026427,0.0789477679271354,OK,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLS1,break up,2019-06-26,Chlorophyllide,6.09584396704401,0.102884046677626,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,break up,2019-06-26,Pheophorbide,9.42078465152772,0.159001518586712,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,break up,2019-06-26,Chlorophyll a,179.132115396187,3.02334459699436,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,break up,2019-06-26,Pheophytin,34.5573122409187,0.583249201401733,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,break up,2019-06-26,Peridinin,0.200308534074239,0.00338075460609507,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,break up,2019-06-26,Fucoxanthin,71.5326129704276,1.20730857476177,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,break up,2019-06-26,Alloxanthin,0.378867070995937,0.00639441849688015,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,break up,2019-06-26,Zeaxanthin,1.17885686697218,0.0198964352735261,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,open water,2019-08-03,Alloxanthin,0.470206879057923,0.00984507278750133,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,open water,2019-08-03,Zeaxanthin,1.02321065012683,0.0214237259727634,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,open water,2019-08-03,Chlorophyllide,7.7312518998877104,0.161874998182505,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,open water,2019-08-03,Pheophorbide,12.5270012311644,0.2622871855406,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,open water,2019-08-03,Chlorophyll a,86.7800268160737,1.81697826756022,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,open water,2019-08-03,Pheophytin,22.8398182762814,0.478214342235503,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,open water,2019-08-03,Peridinin,0.162036119720203,0.00339267131958137,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,open water,2019-08-03,Fucoxanthin,41.347885481391,0.865731575406021,OK,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+East,Jago,JALD2,open water,2018-08-08,Pheophorbide,75.3185108002557,2.56191874257632,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2018-08-08,Fucoxanthin,91.5602474616285,3.11437270273373,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2018-08-08,Chlorophyll a,189.493815027092,6.44553047002821,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2018-08-08,Pheophytin,107.206283853342,3.64656423776372,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2018-08-08,Peridinin,0.44311977981946,0.0150724816126066,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2018-08-08,Chlorophyllide,14.7543271402551,0.501860523171598,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2018-08-08,Alloxanthin,3.68079355650909,0.125200218376367,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2018-08-08,Zeaxanthin,4.6739646395192,0.15898240000893,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,under ice,2019-04-27,Chlorophyll a,190.023862886083,6.91499589629671,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,under ice,2019-04-27,Pheophytin,52.3070493927529,1.90346110433041,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,under ice,2019-04-27,Peridinin,0.205931672381105,0.00749388338814341,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,under ice,2019-04-27,Chlorophyllide,14.3339656607888,0.521615086740097,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,under ice,2019-04-27,Pheophorbide,23.4352840854172,0.852813382582152,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,under ice,2019-04-27,Alloxanthin,1.86061521923905,0.0677080573471886,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,under ice,2019-04-27,Zeaxanthin,2.47667424726962,0.0901265346163396,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,under ice,2019-04-27,Fucoxanthin,92.7381449076219,3.37475452675549,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,break up,2019-06-20,Chlorophyll a,180.576653517603,5.86560650193506,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,break up,2019-06-20,Peridinin,0.841260925573152,0.0273263761330296,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,break up,2019-06-20,Fucoxanthin,83.0640695950686,2.69814030331737,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,break up,2019-06-20,Alloxanthin,5.08665163361302,0.165227875885354,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,break up,2019-06-20,Pheophytin,79.5995340920193,2.58560304239792,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,break up,2019-06-20,Chlorophyllide,15.4097014398923,0.500547790636175,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,break up,2019-06-20,Pheophorbide,49.2686985902646,1.60037741958023,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,break up,2019-06-20,Zeaxanthin,2.56265947554829,0.0832419462273191,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2019-08-08,Alloxanthin,1.83814875989609,0.0633810143446984,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2019-08-08,Zeaxanthin,1.91933924963937,0.0661805350947833,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2019-08-08,Chlorophyllide,9.14128225921812,0.315199593548235,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2019-08-08,Pheophorbide,34.9722290473456,1.20587375694293,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2019-08-08,Chlorophyll a,170.998455253033,5.89617977705266,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2019-08-08,Pheophytin,42.2171393761082,1.4556847491171,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2019-08-08,Peridinin,0.396944954820384,0.0136870172993771,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2019-08-08,Fucoxanthin,64.6282366148588,2.22843943935772,OK,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALS2,open water,2018-08-08,Alloxanthin,0.83369055804759,0.0257799551274593,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2018-08-08,Zeaxanthin,1.30641937732485,0.0403980021123802,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2018-08-08,Chlorophyll a,179.481833091599,5.55006118113124,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2018-08-08,Pheophytin,48.4737929726245,1.49894009909211,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2018-08-08,Peridinin,0.254587376538391,0.0078725266585095,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2018-08-08,Fucoxanthin,99.9886509153195,3.0919181091469,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2018-08-08,Chlorophyllide,17.8457026040617,0.551837138983685,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2018-08-08,Pheophorbide,24.2663948907061,0.750382219576369,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,break up,2019-06-22,Pheophytin,101.031793683321,3.01273319653793,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,break up,2019-06-22,Chlorophyll a,323.071383032423,9.63387707006423,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,break up,2019-06-22,Chlorophyllide,12.534191809929,0.373765271117631,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,break up,2019-06-22,Pheophorbide,20.0668554150442,0.598386698434032,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,break up,2019-06-22,Peridinin,0.523874873847679,0.0156217678191492,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,break up,2019-06-22,Fucoxanthin,144.697021704874,4.31481521645409,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,break up,2019-06-22,Alloxanthin,0.602326748271148,0.0179611756212818,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,break up,2019-06-22,Zeaxanthin,1.05188789141175,0.0313669336548228,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2019-08-08,Chlorophyllide,11.1814278746704,0.311454838771883,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2019-08-08,Pheophorbide,16.2057189582701,0.451404743822059,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2019-08-08,Chlorophyll a,151.67751759649,4.22492523475912,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2019-08-08,Pheophytin,42.0247858760154,1.17058599815214,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2019-08-08,Alloxanthin,0.240834241295845,0.00670835519705546,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2019-08-08,Zeaxanthin,0.918497883338418,0.0255844435410191,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2019-08-08,Fucoxanthin,72.5589043320959,2.02110339605293,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2019-08-08,Peridinin,0.248385607593548,0.00691869591553257,OK,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Kaktovik,KALD2,open water,2018-08-07,Chlorophyll a,184.993560051647,5.25204471023673,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2018-08-07,Chlorophyllide,11.881445834341,0.337319227365499,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2018-08-07,Pheophorbide,94.0488838921157,2.67008723444941,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2018-08-07,Alloxanthin,2.18340726667474,0.0619878474798259,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2018-08-07,Zeaxanthin,3.2697793756394,0.0928304070080797,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2018-08-07,Pheophytin,75.9878096852416,2.15732576738579,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2018-08-07,Peridinin,0.780949992755175,0.0221714976308588,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2018-08-07,Fucoxanthin,110.378400482622,3.13368905499899,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,under ice,2019-04-26,Zeaxanthin,3.33405062777864,0.116726177105414,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,under ice,2019-04-26,Pheophytin,66.0308164263307,2.31175996800331,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,under ice,2019-04-26,Pheophorbide,48.8301493700835,1.70955912185824,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,under ice,2019-04-26,Chlorophyll a,207.826983644835,7.27608906058329,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,under ice,2019-04-26,Peridinin,0.582045323703355,0.0203775926411897,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,under ice,2019-04-26,Fucoxanthin,114.069609169704,3.99361344166493,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,under ice,2019-04-26,Alloxanthin,2.14867336562631,0.0752257406435625,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,under ice,2019-04-26,Chlorophyllide,14.5284729027141,0.508646475546566,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,break up,2019-06-20,Chlorophyll a,226.576639039686,6.25452701979234,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,break up,2019-06-20,Pheophytin,64.3481329395251,1.77629581694411,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,break up,2019-06-20,Peridinin,1.46526349772939,0.0404478156993875,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,break up,2019-06-20,Fucoxanthin,144.179397476621,3.97999520620019,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,break up,2019-06-20,Alloxanthin,2.73070864540786,0.0753797526447219,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,break up,2019-06-20,Zeaxanthin,3.10014359145635,0.0855778068744482,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,break up,2019-06-20,Chlorophyllide,21.7371863945129,0.600043412308407,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,break up,2019-06-20,Pheophorbide,49.3968181576162,1.3635727635825,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2019-08-08,Chlorophyllide,3.55859045934766,0.107506763840575,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2019-08-08,Alloxanthin,2.462054541914,0.074379875746838,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2019-08-08,Zeaxanthin,2.21034740526269,0.0667756796455762,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2019-08-08,Peridinin,0.558690560542751,0.0168783159619998,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2019-08-08,Pheophorbide,30.3088382341999,0.915644874438185,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2019-08-08,Chlorophyll a,102.481094957568,3.09600416220595,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2019-08-08,Pheophytin,48.339772129128,1.4603682344908,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2019-08-08,Fucoxanthin,59.08436394524,1.78496762521414,OK,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALS2,open water,2018-08-07,Zeaxanthin,0.0638696893819226,0.0010596463882445,PWL,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2018-08-07,Alloxanthin,0.0511260506692741,8.4821979660723e-4,PWL,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2018-08-07,Chlorophyllide,1.35560983300143,0.0224905910348025,PWL,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2018-08-07,Pheophorbide,0.804514829773573,0.0133475086838295,PWL,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2018-08-07,Chlorophyll a,24.1793953711525,0.401154432140221,PWL,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2018-08-07,Pheophytin,1.39587040327402,0.0231585443048257,PWL,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2018-08-07,Peridinin,0.934159260685634,0.0154984077143618,PWL,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2018-08-07,Fucoxanthin,8.7287539635032,0.144816621167394,PWL,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,break up,2019-06-22,Pheophorbide,2.39700743132808,0.0353364749435566,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,break up,2019-06-22,Pheophytin,5.47765528032712,0.0807511174278986,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,break up,2019-06-22,Peridinin,3.25698877615906,0.0480142450857663,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,break up,2019-06-22,Fucoxanthin,45.3328345406773,0.668292701528878,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,break up,2019-06-22,Chlorophyll a,90.6088698328851,1.33574807348,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,break up,2019-06-22,Chlorophyllide,2.69061020041242,0.0396647414134519,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,break up,2019-06-22,Alloxanthin,0.181611257503135,0.00267729735267097,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,break up,2019-06-22,Zeaxanthin,0.0850101016905267,0.00125321152078036,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2019-08-10,Chlorophyll a,51.6123779535065,0.739463012659949,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2019-08-10,Chlorophyllide,2.66191287543152,0.038137869099503,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2019-08-10,Pheophorbide,3.32161751634445,0.0475896169277986,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2019-08-10,Alloxanthin,0.107855172942572,0.00154526712927118,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2019-08-10,Zeaxanthin,0.0999321906390557,0.00143175264697611,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2019-08-10,Fucoxanthin,22.0394458262125,0.315764466862733,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2019-08-10,Pheophytin,4.20472229551748,0.0602420725284675,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2019-08-10,Peridinin,0.415372437767077,0.00595114130342609,OK,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+West,Elson East,EELD1,under ice,2019-04-16,Chlorophyllide,3.40013285189462,0.11056949643307,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,under ice,2019-04-16,Pheophorbide,11.4469882505806,0.37224655084777,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,under ice,2019-04-16,Chlorophyll a,61.6451834058923,2.00465016621797,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,under ice,2019-04-16,Pheophytin,12.5457673056002,0.407977933148617,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,under ice,2019-04-16,Peridinin,0.300770208616845,0.00978079738569715,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,under ice,2019-04-16,Fucoxanthin,29.8753509396923,0.971521600199342,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,under ice,2019-04-16,Alloxanthin,0.557527366101151,0.0181303269027003,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,under ice,2019-04-16,Zeaxanthin,1.02087208481707,0.0331979123338973,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,open water,2019-08-02,Chlorophyllide,5.43865153515084,0.149211687550613,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,open water,2019-08-02,Pheophorbide,11.153429011641,0.305999006196075,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,open water,2019-08-02,Chlorophyll a,81.132168118275,2.22589508471461,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,open water,2019-08-02,Pheophytin,16.5018835447214,0.452736101137848,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,open water,2019-08-02,Peridinin,0.743075077464917,0.0203865766300226,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,open water,2019-08-02,Fucoxanthin,47.3351455859968,1.2986595864235,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,open water,2019-08-02,Alloxanthin,0.852635242241513,0.0233924057347155,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,open water,2019-08-02,Zeaxanthin,0.881469687955804,0.0241834908551371,OK,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELS1,break up,2019-06-22,Chlorophyllide,0.982651681270812,0.0153970589108865,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,break up,2019-06-22,Pheophorbide,3.14021857667254,0.0492037324513185,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,break up,2019-06-22,Chlorophyll a,22.7219258771102,0.356027306487908,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,break up,2019-06-22,Pheophytin,21.7018842012361,0.340044387947861,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,break up,2019-06-22,Peridinin,0.128173895066458,0.00200834237684692,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,break up,2019-06-22,Fucoxanthin,3.20189521094746,0.0501701367118069,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,break up,2019-06-22,Alloxanthin,0.353167304901417,0.00553373886455248,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,break up,2019-06-22,Zeaxanthin,0.644634794971374,0.0101007102550778,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,open water,2019-08-02,Pheophytin,22.7869467695187,0.288182199375673,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,open water,2019-08-02,Fucoxanthin,13.4929254936708,0.170642472820428,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,open water,2019-08-02,Alloxanthin,0.468368129906786,0.00592336301827678,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,open water,2019-08-02,Zeaxanthin,0.817302421123166,0.0103362689023963,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,open water,2019-08-02,Peridinin,0.27055337842989,0.00342163732741678,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,open water,2019-08-02,Chlorophyllide,1.82246496983629,0.0230483692530096,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,open water,2019-08-02,Pheophorbide,4.30245389916893,0.0544123194702636,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,open water,2019-08-02,Chlorophyll a,49.689239070671,0.628410394140401,OK,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson West,EWLD1,open water,2018-07-28,Chlorophyllide,13.4995966219572,0.609601951925624,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2018-07-28,Pheophorbide,24.0392946304808,1.0855436158604,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2018-07-28,Chlorophyll a,193.181329802984,8.72349885862096,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2018-07-28,Pheophytin,26.1507756632016,1.18089186922279,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2018-07-28,Peridinin,0.459520137170466,0.020750573547703,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2018-07-28,Fucoxanthin,91.49552760424,4.1316680625323,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2018-07-28,Alloxanthin,0.703448835335962,0.0317656738278479,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2018-07-28,Zeaxanthin,1.11682904156697,0.0504327042334797,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,under ice,2019-04-14,Zeaxanthin,0.866312265684457,0.0312428600080372,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,under ice,2019-04-14,Chlorophyllide,3.0618046487429,0.11042153944,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,under ice,2019-04-14,Pheophorbide,11.8091822658725,0.425888727375397,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,under ice,2019-04-14,Chlorophyll a,42.3906304605925,1.52878423357696,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,under ice,2019-04-14,Fucoxanthin,26.331956624669,0.949640986454524,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,under ice,2019-04-14,Alloxanthin,0.548798908041427,0.0197919943370018,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,under ice,2019-04-14,Pheophytin,15.0817238401754,0.543910325737099,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,under ice,2019-04-14,Peridinin,0.780426005667829,0.02814544063098,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-23,Fucoxanthin,92.6582952959467,2.78194631689413,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-23,Alloxanthin,1.47085257880012,0.0441604596892063,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-23,Zeaxanthin,5.12848692663486,0.153976233549547,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-23,Chlorophyllide,14.7556036521305,0.4430180493013,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-23,Pheophorbide,34.963292118384,1.04972794313308,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-23,Chlorophyll a,245.995222739703,7.38569063556044,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-23,Pheophytin,81.2601316272489,2.43973109119617,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-23,Peridinin,0.501583593811941,0.015059403229499,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-24,Chlorophyllide,6.26922306171969,0.0889492703882619,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-24,Pheophorbide,14.3334635064534,0.203366686507097,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-24,Chlorophyll a,142.141875280189,2.01674369747564,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-24,Pheophytin,24.4233295794641,0.346524174552097,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-24,Peridinin,1.64007729565542,0.023269817869407,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-24,Alloxanthin,2.5659038654044,0.0364056717183606,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-24,Fucoxanthin,78.24985907641,1.1102281421969,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-24,Zeaxanthin,1.65816910303579,0.0235265088581701,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2019-08-02,Chlorophyllide,6.71227349762256,0.199876609931466,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2019-08-02,Pheophorbide,30.2002726400355,0.899297103497695,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2019-08-02,Chlorophyll a,145.392599844504,4.3294689908471,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2019-08-02,Pheophytin,21.0446829630039,0.626663959568626,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2019-08-02,Peridinin,0.482820118562997,0.0143773117318985,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2019-08-02,Fucoxanthin,71.638013848602,2.13322108453322,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2019-08-02,Alloxanthin,1.53755491075576,0.0457849733408793,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2019-08-02,Zeaxanthin,2.11292375587041,0.0629181807798241,OK,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLS1,open water,2018-07-28,Zeaxanthin,1.21097248858775,0.0208066604670756,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2018-07-28,Pheophytin,52.114510970583,0.89541995824956,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2018-07-28,Chlorophyllide,67.4916223518075,1.1596260723345,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2018-07-28,Pheophorbide,21.6837133353523,0.372564748816243,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2018-07-28,Chlorophyll a,932.086791784221,16.0149083362886,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2018-07-28,Peridinin,0.738975357501363,0.0126969105425326,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2018-07-28,Fucoxanthin,338.811600420265,5.82138570337978,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2018-07-28,Alloxanthin,0.0433099295955859,7.4414159565195e-4,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,break up,2019-06-25,Fucoxanthin,22.7432792092244,0.292349095262852,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,break up,2019-06-25,Pheophytin,4.15530570822957,0.053413575639909,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,break up,2019-06-25,Peridinin,0.0601618057306937,7.7333832614666e-4,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,break up,2019-06-25,Alloxanthin,0.0451173381821355,5.7995212022309e-4,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,break up,2019-06-25,Zeaxanthin,0.237293967281444,0.00305024952681081,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,break up,2019-06-25,Chlorophyllide,5.44931938411221,0.070047224812567,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,break up,2019-06-25,Pheophorbide,2.27698845853181,0.0292691088937492,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,break up,2019-06-25,Chlorophyll a,66.2687632440341,0.851839033428556,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2019-08-02,Pheophorbide,20.6941979899231,0.34764794228413,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2019-08-02,Peridinin,0.433514887752413,0.00728274460068708,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2019-08-02,Fucoxanthin,351.603292439466,5.90668752548064,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2019-08-02,Chlorophyll a,1084.64975228282,18.2213514466098,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2019-08-02,Pheophytin,82.9349050456428,1.3932479575525,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2019-08-02,Chlorophyllide,71.0941029419462,1.19433082685006,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2019-08-02,Zeaxanthin,1.93896450467373,0.0325732372204047,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2019-08-02,Alloxanthin,0.0919591743072924,0.00154484932142068,OK,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary

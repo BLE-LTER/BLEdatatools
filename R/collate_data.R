@@ -28,6 +28,7 @@ collate_data <- function(ids = NULL, output = "object", path = NULL) {
   # just hardcoding
   # data[[2]][[1]]$date_collected <- as.Date(data[[2]][[1]]$date_time)
   # data[[2]][[1]] <- dplyr::rename(data[[2]][[1]], date_time_YSI = date_time)
+
   data[[2]][[1]] <- preprocess(data[[2]][[1]], ysi = TRUE)
   data <- rrapply::rrapply(data, preprocess, how = "replace", classes = "data.frame")
   # why is rrapply not working???

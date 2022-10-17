@@ -175,7 +175,8 @@ get_uncollated_dfs <- function(ids = NULL,
 
 
 #' Preprocess tables before putting them info the join
-#' @description Rename any date_time column to date_collected, and remove the time portion
+#' @description This (1) renames any date_time column to date_collected, and remove the time portion; (2) renames any occurrences of "STL" into "SSL"
+#'
 #'
 #' @param df (data.frame) ONE data.frame containing BLE LTER water/sediment core data, as downloaded from EDI without any processing.
 #' @param ysi (logical) Set this to TRUE when the data is YSI. Returns date_collected as usual, plus a date_time_YSI column that retains the time.
@@ -192,5 +193,6 @@ preprocess <- function(df, ysi = F) {
   df <- dplyr::rename(df, date_collected = date_time)
   df$date_collected <- as.Date(df$date_collected)
   }
+  df$station <- gsub("STL", "SSL", df$station)
   return(df)
 }
