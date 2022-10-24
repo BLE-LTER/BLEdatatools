@@ -90,6 +90,7 @@ get_uncollated_entities <- function(ids = NULL) {
 #'
 #' @return (list) A nested list of data frames. 1st-level list items are named "data" and "metadata" (if metadata = TRUE). For "data": 2nd-level list items correspond to datasets, 3rd-level items correspond to entities within a dataset and contain a data.frame of the data entity. List items are named accordingly (dataset after the packageId and entities after the entity name). Optionally, if write=T, functions also write to CSVs files in specified path. File names are the full package Id, followed by two underscores, followed by the full entity name. For "metadata": 2nd-level list items correspond to datasets, and contain a the metadata for that dataset in "emld" aka list format.
 #'
+#' @import EDIutils
 #' @examples
 get_uncollated_dfs <- function(ids = NULL,
                           path = NULL,
@@ -196,6 +197,7 @@ preprocess <- function(df, ysi = F) {
   if ("date_collected" %in% colnames(df)) {
     df <- dplyr::rename(df, date_time = date_collected)
   }
+  # in case any datasets still have "STL" instead of "SSL" for Stefasson Sound
   df$station <- gsub("STL", "SSL", df$station)
   return(df)
 }

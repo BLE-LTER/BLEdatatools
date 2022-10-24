@@ -15,5 +15,5 @@ preprocess(df, ysi = F)
 (data.frame) A data.frame
 }
 \description{
-Rename any date_time column to date_collected, and remove the time portion
+This (1) renames any date_time column to date_collected, and remove the time portion; (2) renames any occurrences of "STL" into "SSL"
 }
