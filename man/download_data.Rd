@@ -30,5 +30,4 @@ download_data(identifier = 1)
 
 # save DOC/TDN data (package 12, entity 1) as an R object
 DOC <- download_data(identifier = 12, 1)
-
 }

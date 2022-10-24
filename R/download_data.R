@@ -18,7 +18,7 @@
 #'
 #' # save DOC/TDN data (package 12, entity 1) as an R object
 #' DOC <- download_data(identifier = 12, 1)
-#'
+#' @export
 
 download_data <- function(identifier,
                           entity_number = NULL,
