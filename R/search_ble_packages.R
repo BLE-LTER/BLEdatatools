@@ -1,23 +1,22 @@
-#' Search all BLE LTER packages
+#' Search all BLE LTER packages on EDI
 #'
 #' Modify EDI utils search_data_packages function to return only BLE LTER data. Default is to provide a dataframe with
-#' all BLE package id ("scope.identifier.revision" format), title, publication dates, and the package number from
+#' all BLE package id ("scope.identifier.revision" format), title, and the package identifier from
 #' package id.
 #'
 #'
-#' @param fields (string) Searchable metadata fields in EDI repository to include query that produces output.
-#' The way this function is written now, this string must follow the Solr query syntex (e.g. "id, packageid, title").
+#' @param fields (character) Metadata fields in EDI repository to include query that produces output. This string must follow the Solr query syntex.
+#' Default is to provide the id, packageid, and title.
 #'
+#' @param env (character) Repository environment. Can be "production", "staging", or "development".
 #'
-#' @param env (string) Repository environment. Can be "production", "staging", or "development".
-#'
-#' @return
+#' @return (data.frame) Default parameters return the fields: id, packageid, title, identifier.
 #' @export
 #'
-#' @examples
+#' @examples packages <- search_ble_packages()
 #'
 
-search_ble_packages <- function(fields = 'id,packageid,title,pubdate', env = 'production') {
+search_ble_packages <- function(fields = 'id,packageid,title', env = 'production') {
 
   scope <- 'knb-lter-ble'
 
@@ -26,11 +25,11 @@ search_ble_packages <- function(fields = 'id,packageid,title,pubdate', env = 'pr
   # df created using EDI utils function
   df <- EDIutils::search_data_packages(query = query, env = env)
 
-  # column including BLE package id number
-  id_number <- as.numeric(sub(".*knb-lter-ble.", "", df$id))
+  # vector including BLE package identifier
+  identifier <- as.numeric(sub(".*knb-lter-ble.", "", df$id))
 
   # bind new id column to data frame
-  df <- cbind(df, id_number)
+  df <- cbind(df, identifier)
 
   return(df)
 }

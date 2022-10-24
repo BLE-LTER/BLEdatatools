@@ -2,22 +2,33 @@
 % Please edit documentation in R/download_data.R
 \name{download_data}
 \alias{download_data}
-\title{Download BLE data files}
+\title{Download a BLE LTER data package or data entity from EDI}
 \usage{
-download_data(ids = NULL, path = NULL, write = FALSE, metadata = TRUE)
+download_data(identifier, entity_number = NULL, path = NULL, write = FALSE)
 }
 \arguments{
-\item{ids}{(numeric) Vector of dataset IDs to grab, default is to get all data}
+\item{identifier}{(numeric) Package identifier number that corresponds with the EDI package ID. Can only specify one identifier at a time.}
 
-\item{path}{(character) Path to write CSVs to, defaults to working directory}
+\item{entity_number}{(numeric). Entity identifier number. Optional. Can only specify one entity at a time. Entity must be a .csv file or function will produce an error.}
 
-\item{write}{(boolean) Whether to write data entities to file, defaults to FALSE}
+\item{path}{(character) Path to write files to. If left blank, will default to the working directory.}
 
-\item{metadata}{(boolean) whether to get metadata, defaults to TRUE}
+\item{write}{(boolean) If true, writes the entity as a .csv file. Otherwise, saves the entity as an R object.}
 }
 \value{
-(list) A nested list of data frames. 1st-level list items are named "data" and "metadata" (if metadata = TRUE). For "data": 2nd-level list items correspond to datasets, 3rd-level items correspond to entities within a dataset and contain a data.frame of the data entity. List items are named accordingly (dataset after the packageId and entities after the entity name). Optionally, if write=T, functions also write to CSVs files in specified path. File names are the full package Id, followed by two underscores, followed by the full entity name. For "metadata": 2nd-level list items correspond to datasets, and contain a the metadata for that dataset in "emld" aka list format.
+Zip folder containing all package data entities, one .csv file containing specified data entity, or a data.frame containing the specified data entity.
 }
 \description{
-Download BLE data files
+The function finds the most recent package or entity from EDI. Can download an entire package as a zip file, or save an entity as a .csv or R object.
+}
+\examples{
+# download the third entity in package 1 as a .csv
+download_data(identifier = 1, entity_number = 3)
+
+# download all entities in package 1 in a zip file
+download_data(identifier = 1)
+
+# save DOC/TDN data (package 12, entity 1) as an R object
+DOC <- download_data(identifier = 12, 1)
+
 }
