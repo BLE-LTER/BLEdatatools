@@ -12,6 +12,13 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports: 
     EDIutils,
-    bleutils (>= 0.1.0)
-Remotes:  
+    bleutils (>= 0.1.0),
+    EML,
+    emld,
+    dplyr,
+    purrr,
+    rrapply,
+    stringr,
+    readr
+Remotes: 
     BLE-LTER/bleutils

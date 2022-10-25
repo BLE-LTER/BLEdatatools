@@ -6,7 +6,6 @@
 #'
 #' @return
 #' @export
-#'
 #' @examples
 collate_data <- function(ids = NULL, output = "object", path = NULL) {
   if (is.null(path)) path <- getwd()
@@ -30,7 +29,7 @@ collate_data <- function(ids = NULL, output = "object", path = NULL) {
   # data[[2]][[1]] <- dplyr::rename(data[[2]][[1]], date_time_YSI = date_time)
 
   # data[[2]][[1]] <- preprocess(data[[2]][[1]], ysi = TRUE)
-  data <- rrapply::rrapply(data, f = preprocess, classes = "data.frame", how = "replace")
+  data <- rrapply::rapply(object = data, f = preprocess, classes = "data.frame", how = "replace")
   # why is rrapply not working???
   # return(data)
 
