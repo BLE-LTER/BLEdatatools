@@ -7,16 +7,17 @@
 #'
 #' @param fields (character) Metadata fields in EDI repository to include query that produces output. This string must follow the Solr query syntex.
 #' Default is to provide the id, packageid, and title.
-#'
 #' @param env (character) Repository environment. Can be "production", "staging", or "development".
 #'
 #' @return (data.frame) Default parameters return the fields: id, packageid, title, identifier.
-#' @export
 #'
 #' @examples packages <- search_ble_packages()
 #'
+#' @export
 
-search_ble_packages <- function(fields = 'id,packageid,title', env = 'production') {
+
+search_ble_packages <- function(fields = 'id,packageid,title',
+                                env = 'production') {
 
   scope <- 'knb-lter-ble'
 
