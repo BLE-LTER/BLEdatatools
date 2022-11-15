@@ -135,7 +135,7 @@ get_uncollated_dfs <- function(ids = NULL,
     object = raw,
     f = readr::read_csv,
     how = "list",
-    show_col_types = F # argument to read_csv
+    show_col_types = F # argument to read_csv in readr >2.0.0
   ))
 
   # writing to path is optional???
