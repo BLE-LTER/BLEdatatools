@@ -4,7 +4,7 @@
 \alias{collate_data}
 \title{Collate data from different water/sediment BLE LTER data sets}
 \usage{
-collate_data(ids = NULL, output = "object", path = NULL)
+collate_data(ids = NULL, output = "object", path = NULL, avg_rep = F)
 }
 \arguments{
 \item{ids}{(numeric) Vector of dataset IDs to grab, default is to get all data}

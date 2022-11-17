@@ -7,7 +7,7 @@
 #' @return
 #' @export
 #' @examples
-collate_data <- function(ids = NULL, output = "object", path = NULL) {
+collate_data <- function(ids = NULL, output = "object", path = NULL, avg_rep = F) {
   if (is.null(path)) path <- getwd()
   stopifnot(is.numeric(ids) || is.null(ids), output %in% c("excel", "csv", "object"))
   data <- get_uncollated_dfs(ids = ids, path = path, metadata = TRUE)
@@ -35,6 +35,39 @@ collate_data <- function(ids = NULL, output = "object", path = NULL) {
 
   # sediment pigments long to wide
   data[[5]][[1]] <- tidyr::pivot_wider(data[[5]][[1]], names_from = pigment, values_from = c(areal_concentration_mg_m2, mass_concentration_ug_g, flag))
+
+  # avg rep for nutrients
+  if (avg_rep) {
+    # 2019 reps are NA but now are 1
+    # data[[7]][[1]][is.na(data[[7]][[1]][["rep"]]), "rep"] <- 1
+    # # duplicates haiz
+    # data[[7]][[1]] <- data[[7]][[1]][which(!duplicated(data[[7]][[1]])), ]
+    # aggregate(data[[7]][[1]][[8]], list(data[[7]][[1]]$rep), FUN=mean)
+    # aggregate(data[[7]][[1]][[8]], list(data[[7]][[1]]$rep), FUN=mean)
+
+  } else {
+    data[[7]][[1]][is.na(data[[7]][[1]][["rep"]]), "rep"] <- 1
+    data[[7]][[1]] <- data[[7]][[1]][which(!duplicated(data[[7]][[1]])), ]
+    # stop-gap solution while Quinn looks at stuff
+    data[[7]][[1]][84, 6] <- "bottom"
+    data[[7]][[1]] <-
+      tidyr::pivot_wider(
+        data[[7]][[1]],
+        names_from = rep,
+        values_from = c(
+          ammonium_umol_N_L,
+          phosphate_umol_P_L,
+          silicate_umol_SiO2_L,
+          nitrate_nitrite_umol_N_L,
+          flag_NH3,
+          flag_PO4,
+          flag_SiO2,
+          flag_NO23
+        ),
+        names_prefix = "rep"
+      )
+    # data[[7]][[1]][is.null(data[[7]][[1]])] <- NA
+  }
 
   # need to NOT duplicate common columns like node/lagoon/season/lat/lon
 
