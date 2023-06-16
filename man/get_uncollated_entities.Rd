@@ -7,7 +7,7 @@
 get_uncollated_entities(ids = NULL)
 }
 \arguments{
-\item{ids}{(numeric) Vector of dataset IDs to grab}
+\item{ids}{(numeric) Vector of BLE dataset IDs to grab}
 }
 \value{
 (list) A nested list. 1st-level list item corresponds to dataset, 2nd-level items correspond to entities within a dataset and contain a string of the entity Id. List items are named accordingly (dataset after the packageId and entities after the entity name).

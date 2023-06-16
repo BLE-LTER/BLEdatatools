@@ -16,9 +16,7 @@ Default is to provide the id, packageid, and title.}
 (data.frame) Default parameters return the fields: id, packageid, title, identifier.
 }
 \description{
-Modify EDI utils search_data_packages function to return only BLE LTER data. Default is to provide a dataframe with
-all BLE package id ("scope.identifier.revision" format), title, and the package identifier from
-package id.
+Modify EDI utils search_data_packages function to return only BLE LTER data. Default is to provide a dataframe with all BLE package id ("scope.identifier.revision" format), title, and the package identifier from package id.
 }
 \examples{
 packages <- search_ble_packages()

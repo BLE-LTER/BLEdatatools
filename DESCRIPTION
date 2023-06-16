@@ -1,5 +1,5 @@
 Package: BLEdatatools
-Title: What the Package Does (One Line, Title Case)
+Title: R Tools to work with data from the Beaufort Lagoon Ecosystems LTER (BLE LTER) research program
 Version: 0.0.0.9000
 Authors@R: 
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
@@ -19,6 +19,8 @@ Imports:
     purrr,
     rrapply,
     stringr,
-    readr (>= 2.0.0)
+    readr (>= 2.0.0),
+    openxlsx,
+    data.table
 Remotes: 
     BLE-LTER/bleutils

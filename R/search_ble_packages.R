@@ -1,9 +1,6 @@
 #' Search all BLE LTER packages on EDI
 #'
-#' Modify EDI utils search_data_packages function to return only BLE LTER data. Default is to provide a dataframe with
-#' all BLE package id ("scope.identifier.revision" format), title, and the package identifier from
-#' package id.
-#'
+#' @description Modify EDI utils search_data_packages function to return only BLE LTER data. Default is to provide a dataframe with all BLE package id ("scope.identifier.revision" format), title, and the package identifier from package id.
 #'
 #' @param fields (character) Metadata fields in EDI repository to include query that produces output. This string must follow the Solr query syntex.
 #' Default is to provide the id, packageid, and title.
