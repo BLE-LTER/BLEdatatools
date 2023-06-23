@@ -262,3 +262,18 @@ parse_attribute <- function(x) {
   att <- as.data.frame(t(att), stringsAsFactors = FALSE)
   return(att)
 }
+
+which_ids <- function() {
+  message(paste(
+    "Quick reference list of Core Program dataset IDs:",
+    "2: water column dissolved organic carbon (DOC), total dissolved nitrogen",
+    "3: CTD/TCM mooring data, YSI data (only YSI data is collated by this R package)",
+    "4: water column d18O",
+    "11: water column particulate organic matter (POM) carbon and nitrogen content, d13C and d15N",
+    "12: sediment pigment concentrations",
+    "13: water column chlorophyll",
+    "14: water column and sediment nutrient concentrations",
+    "18: sediment carbon and nitrogen content, d13C and d15N",
+    sep = "\n")
+  )
+}
