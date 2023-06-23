@@ -55,8 +55,6 @@ collate <-
         classes = "data.frame",
         how = "replace"
       )
-    # why is rrapply not working???
-    # return(data)
 
     # sediment pigments long to wide
     if (12 %in% ids) {
@@ -70,9 +68,9 @@ collate <-
         )
     }
 
-
     # avg rep for nutrients
     if (14 %in% ids) {
+      where_14 <- grep(pattern = 'knb-lter-ble.14', x = names(data))
       if (avg_rep) {
         # 2019 reps are NA but now are 1
         # data[[7]][[1]][is.na(data[[7]][[1]][["rep"]]), "rep"] <- 1
@@ -81,8 +79,9 @@ collate <-
         # aggregate(data[[7]][[1]][[8]], list(data[[7]][[1]]$rep), FUN=mean)
         # aggregate(data[[7]][[1]][[8]], list(data[[7]][[1]]$rep), FUN=mean)
 
-      } else {
-        nutrient <- data$`knb-lter-ble.14`
+
+      } else if (!avg_rep) {
+        nutrient <- data[[where_14]]
         nutrient[[1]][is.na(nutrient[[1]][["rep"]]), "rep"] <- 1
         nutrient[[1]] <-
           nutrient[[1]][which(!duplicated(nutrient[[1]])), ]
@@ -104,6 +103,25 @@ collate <-
             ),
             names_prefix = "rep"
           )
+        nutrient[[2]][is.na(nutrient[[2]][["rep"]]), "rep"] <- 1
+        nutrient[[2]] <-
+          tidyr::pivot_wider(
+            nutrient[[2]],
+            names_from = rep,
+            values_from = c(
+              ammonium_umol_N_L,
+              phosphate_umol_P_L,
+              silicate_umol_SiO2_L,
+              nitrate_nitrite_umol_N_L,
+              flag_NH3,
+              flag_PO4,
+              flag_SiO2,
+              flag_NO23
+            ),
+            names_prefix = "rep"
+          )
+
+        data[[where_14]] <- nutrient
         # data[[7]][[1]][is.null(data[[7]][[1]])] <- NA
       }
     }
