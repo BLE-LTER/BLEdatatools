@@ -60,9 +60,11 @@ collate <-
 
     # sediment pigments long to wide
     if (12 %in% ids) {
-      data$`knb-lter-ble.12`[[1]] <-
+      # get where 12 is so we don't have to do any partial matching shenanigans
+      where_12 <- grep(pattern = 'knb-lter-ble.12', x = names(data))
+      data[[where_12]][[1]] <-
         tidyr::pivot_wider(
-          data$`knb-lter-ble.12`[[1]],
+          data[[where_12]][[1]],
           names_from = pigment,
           values_from = c(areal_concentration_mg_m2, mass_concentration_ug_g, flag)
         )
