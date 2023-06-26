@@ -19,7 +19,7 @@ collate(
 
 \item{path}{(character) Path to working directory. Data files will be written to this directory. Defaults to the R session's working directory if unspecfied.}
 
-\item{avg_rep}{(logical) TRUE/FALSE on whether to average replicates. Defaults to FALSE.}
+\item{avg_rep}{(logical) TRUE/FALSE on whether to average replicates. This really only affects the nutrients dataset (knb-lter-ble.14) because this is the only dataset in consideration still retaining replicates in the published version. If FALSE, any data with replicates will be pivoted to a wider format, with the rep number appended to the new column names. E.g., two rows (reps 1 and 2) of one column "ammonium_umol_N_L" become one row of two columns "ammonium_umol_N_L_rep1" and "ammonium_umol_N_L_rep2". If TRUE, numeric columns will be averaged (NAs are ignored) and character columns will be collapsed into one string (e.g. if two replicates from the same sample have the flags VALID and BD, this becomes "VALID BD"). Note that in the original nutrients data, 2018-2019 reps are always NA, because we did not report replicates for these years. "NA" reps become rep 1 for the purposes of this package. Defaults to FALSE.}
 
 \item{skip_metadata}{(logical) whether to skip metadata, defaults to FALSE}
 }

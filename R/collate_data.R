@@ -4,10 +4,13 @@
 #' @param ids (numeric) Vector of BLE dataset IDs to grab. Default is to get all data.
 #' @param output (character) Choice of "excel", "csv", or "object". Returns one Excel file or many CSV files in addition to a R list of data frames, or skipping writing to file altogether, respectively. Defaults to "object".
 #' @param path (character) Path to working directory. Data files will be written to this directory. Defaults to the R session's working directory if unspecfied.
-#' @param avg_rep (logical) TRUE/FALSE on whether to average replicates. Defaults to FALSE.
+#' @param avg_rep (logical) TRUE/FALSE on whether to average replicates. This really only affects the nutrients dataset (knb-lter-ble.14) because this is the only dataset in consideration still retaining replicates in the published version. If FALSE, any data with replicates will be pivoted to a wider format, with the rep number appended to the new column names. E.g., two rows (reps 1 and 2) of one column "ammonium_umol_N_L" become one row of two columns "ammonium_umol_N_L_rep1" and "ammonium_umol_N_L_rep2". If TRUE, numeric columns will be averaged (NAs are ignored) and character columns will be collapsed into one string (e.g. if two replicates from the same sample have the flags VALID and BD, this becomes "VALID BD"). Note that in the original nutrients data, 2018-2019 reps are always NA, because we did not report replicates for these years. "NA" reps become rep 1 for the purposes of this package. Defaults to FALSE.
 #' @param skip_metadata (logical) whether to skip metadata, defaults to FALSE
 #'
 #' @return (list) Named list of data frames: "water_data", "sediment_data", "dataset_metadata", and "column_metadata"
+#' @importFrom dplyr summarize across group_by select
+#' @importFrom magrittr %>%
+#' @importFrom tidyselect everything starts_with ends_with
 #' @export
 collate <-
   function(ids = NULL,
@@ -78,7 +81,26 @@ collate <-
         # data[[7]][[1]] <- data[[7]][[1]][which(!duplicated(data[[7]][[1]])), ]
         # aggregate(data[[7]][[1]][[8]], list(data[[7]][[1]]$rep), FUN=mean)
         # aggregate(data[[7]][[1]][[8]], list(data[[7]][[1]]$rep), FUN=mean)
+        nutrient <- data[[where_14]]
+        nutrient[[1]][is.na(nutrient[[1]][["rep"]]), "rep"] <- 1
+        nutrient[[2]][is.na(nutrient[[2]][["rep"]]), "rep"] <- 1
+        nutrient[[1]][84, 6] <- "bottom"
+        nutrient[[1]] <- nutrient[[1]] %>%
+          select(-rep) %>%
+          group_by(across(-ends_with("_L") &
+                            -starts_with("flag"))) %>%
+          summarize(across(ends_with("_L"), mean),
+                    across(starts_with("flag"), \(x) stringr::str_c(x, collapse = " ")))
 
+        nutrient[[2]] <- nutrient[[2]] %>%
+          select(-rep) %>%
+          group_by(across(-ends_with("_L") &
+                            -starts_with("flag"))) %>%
+          summarize(across(ends_with("_L"), mean),
+                    across(starts_with("flag"), \(x) stringr::str_c(x, collapse = " ")))
+        # nutrient[[1]][, 8:11] <- aggregate(x = nutrient[[1]][, 8:11], list(nutrient[[1]]$rep, nutrient[[1]]$station, nutrient[[1]]$date_time), FUN = mean)
+        # nutrient[[2]][, 7:10] <- aggregate(x = nutrient[[2]][, 7:10], list(nutrient[[2]]$rep, nutrient[[2]]$station, nutrient[[2]]$date_time), FUN = mean)
+        data[[where_14]] <- nutrient
 
       } else if (!avg_rep) {
         nutrient <- data[[where_14]]
