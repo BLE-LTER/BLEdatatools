@@ -182,9 +182,12 @@ collate <-
           ),
           copy = TRUE
         )
+      # return(wdf)
       # remove redundant collection_method columns
       cols <- grep("collection_method", colnames(wdf))
-      wdf <- subset(wdf, select = -cols[2:length(cols)])
+      if (length(cols) > 1) {
+        wdf <- subset(wdf, select = -cols[2:length(cols)])
+      }
 
       # rename to collection_method
       colnames(wdf)[grep("collection_method", colnames(wdf))] <-
