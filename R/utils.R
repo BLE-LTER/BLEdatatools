@@ -21,7 +21,7 @@ get_uncollated_entities <- function(ids = NULL) {
   # works when the ID DOES exist but is not CP and when the ID straight up doesn't exist
   if (!all(ids %in% cp)) {
     out <- which(!ids %in% cp)
-    warning(
+    message(
       paste(
         "Dataset ID",
         ids[out],
@@ -34,19 +34,17 @@ get_uncollated_entities <- function(ids = NULL) {
 
   # loop over IDs (1, 2, 4) and get a list of all revisions
   revs <-
-    sapply(ids, EDIutils::list_data_package_revisions, scope = "knb-lter-ble")
+    lapply(ids, EDIutils::list_data_package_revisions, scope = "knb-lter-ble")
 
   # getting the max or most recent revision number from each data package
-  rev <- sapply(revs, max)
+  rev <- lapply(revs, max)
 
   # construct pkgs ids
   pkg_ids <- paste0("knb-lter-ble.", ids, ".", rev)
-
   message("Querying Environmental Data Initiative (EDI) for the latest BLE data versions...")
 
   # loop over pkg ids and ask for ALL entity IDs and names from each pkg
   allids <- lapply(pkg_ids, EDIutils::read_data_entity_names)
-
   # filter elist by Ids supplied
   elist <- elist[match(ids, cp)]
 
