@@ -75,12 +75,7 @@ collate <-
     if (14 %in% ids) {
       where_14 <- grep(pattern = 'knb-lter-ble.14', x = names(data))
       if (avg_rep) {
-        # 2019 reps are NA but now are 1
-        # data[[7]][[1]][is.na(data[[7]][[1]][["rep"]]), "rep"] <- 1
-        # # duplicates haiz
-        # data[[7]][[1]] <- data[[7]][[1]][which(!duplicated(data[[7]][[1]])), ]
-        # aggregate(data[[7]][[1]][[8]], list(data[[7]][[1]]$rep), FUN=mean)
-        # aggregate(data[[7]][[1]][[8]], list(data[[7]][[1]]$rep), FUN=mean)
+        message("Averaging replicates...")
         nutrient <- data[[where_14]]
         nutrient[[1]][is.na(nutrient[[1]][["rep"]]), "rep"] <- 1
         nutrient[[2]][is.na(nutrient[[2]][["rep"]]), "rep"] <- 1
@@ -98,8 +93,7 @@ collate <-
                             -starts_with("flag"))) %>%
           summarize(across(ends_with("_L"), mean),
                     across(starts_with("flag"), \(x) stringr::str_c(x, collapse = " ")))
-        # nutrient[[1]][, 8:11] <- aggregate(x = nutrient[[1]][, 8:11], list(nutrient[[1]]$rep, nutrient[[1]]$station, nutrient[[1]]$date_time), FUN = mean)
-        # nutrient[[2]][, 7:10] <- aggregate(x = nutrient[[2]][, 7:10], list(nutrient[[2]]$rep, nutrient[[2]]$station, nutrient[[2]]$date_time), FUN = mean)
+
         data[[where_14]] <- nutrient
 
       } else if (!avg_rep) {
@@ -142,9 +136,7 @@ collate <-
             ),
             names_prefix = "rep"
           )
-
         data[[where_14]] <- nutrient
-        # data[[7]][[1]][is.null(data[[7]][[1]])] <- NA
       }
     }
     # --------------------------------------------------------
@@ -166,8 +158,6 @@ collate <-
       }
     }
 
-    # we've lost the names!
-    # but anyway let's start merging
     # ----------------------------------------------------
     # ------------------- water --------------------------
     # ----------------------------------------------------
@@ -250,58 +240,37 @@ collate <-
     # ---------------------------------------------------------------
 
     if (output == 'excel') {
-      file <- file.path(path, "BLE_LTER_Core_Program_collated_data.xlsx")
-      # using the 'xlsx' library
-      # xlsx::write.xlsx(wdf, file = file, sheetName = "water_data", row.names = FALSE)
-      # xlsx::write.xlsx(sdf, file = file, sheetName = "sediment_data", row.names = FALSE, append = TRUE)
-      # if (skip_metadata) {
-      #   xlsx::write.xlsx(metalist[["dataset_metadata"]], file = file, sheetName = "dataset_metadata", rows.names = FALSE, append = TRUE)
-      #   xlsx::write.xlsx(metalist[["column_metadata"]], file = file, sheetName = "column_metadata", row.names = FALSE, append = TRUE)
-      # }
-      #
-      # using the 'openxlsx' library
-
+      file <- file.path(path, paste0("BLE_LTER_Core_Program_collated_data_", Sys.Date(), ".xlsx"))
       openxlsx::write.xlsx(x = out,
                            file = file,
                            rowNames = FALSE)
       message(paste0("Excel file written to path: ", file))
     }
     if (output == 'csv') {
-      file2 <-
-        file.path(path,
-                  "BLE_LTER_Core_Program_collated_sediment_data.csv")
       if (!is.null(wdf)) {
         file1 <-
-          file.path(path, "BLE_LTER_Core_Program_collated_water_data.csv")
+          file.path(path,
+                    paste0("BLE_LTER_Core_Program_collated_water_data_", Sys.Date(), ".csv"))
         write.csv(wdf, file = file1, row.names = FALSE)
       } else file1 <- "No water dataset IDs specified. Water data was skipped."
       if (!is.null(sdf)) {
         file2 <-
           file.path(path,
-                    "BLE_LTER_Core_Program_collated_sediment_data.csv")
+                    paste0("BLE_LTER_Core_Program_collated_sediment_data_", Sys.Date(), ".csv"))
         write.csv(sdf, file = file2, row.names = FALSE)
       } else file2 <- "No sediment dataset IDs specified. Sediment data was skipped."
       if (!skip_metadata) {
         file3 <-
           file.path(path,
-                    "BLE_LTER_Core_Program_collated_dataset_metadata.csv")
+                    paste0("BLE_LTER_Core_Program_collated_dataset_metadata_", Sys.Date(), ".csv"))
         file4 <-
           file.path(path,
-                    "BLE_LTER_Core_Program_collated_column_metadata.csv")
+                    paste0("BLE_LTER_Core_Program_collated_column_metadata_", Sys.Date(), ".csv"))
         write.csv(metalist[["dataset_metadata"]], file = file3, row.names = FALSE)
         write.csv(metalist[["column_metadata"]], file = file4, row.names = FALSE)
-        message(paste(
-          "CSV files written to paths: ",
-          file1,
-          file2,
-          file3,
-          file4,
-          sep = "\n   "
-        ))
-      } else
-        message(paste("CSV files written to paths: ", file1, file2, sep = "\n   "))
+      }
+        message(paste("CSV file(s) written to paths:", path))
     }
-
     message("Collation complete!")
     return(out)
   }
