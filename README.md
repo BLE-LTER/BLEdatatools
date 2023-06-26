@@ -1,5 +1,19 @@
 # BLEdatatools
-R package to download and collate BLE LTER data from the Environmental Data Initiative repository
+
+R package developed by BLE LTER information managers and graduate students to download and collate the Beaufort Lagoon Ecosystems LTER's Core Program data from the Environmental Data Initiative (EDI) repository. 
+
+# Introduction
+
+[BLE LTER](https://ble.lternet.edu) publishes its Core Program data across many data packages' "IDs" in the EDI repository. For example, different measurements, such as dissolved organic carbon (DOC) and concentrations of nutrients, done on the same container of water sampled from a Beaufort Sea lagoon, will be accessible from different places. While this serves our data publishing process well, it can be challenging for some of our data users who wants to see all the available data in one place. This package aims to provide a reproducible and trackable way to join the latest data according to time and location. 
+
+We encourage users to use the functionality in this package as a jump start to their analysis, while still keeping track of the original datasets and keep an eye out for updates.
+
+We recommend users: 
+
+- Re-run the collation whenever there are updates to the underlying data packages, or whenever you start an analysis, to make sure you've got the latest versions.
+- Do not use stale versions of files. Check the dates on your files.
+- Check the collated data against the underlying data packages. By default, the outputs provide metadata that will help track down any particular number back to a published source on EDI. We try our best to preserve the numbers as-is from the originals, however in the case we have overlooked something, please refer to the published EDI source as authoritative instead of the collated data.
+- Cite the underlying data packages in your publications and results. The outputs of this package are convenience products and should not be cited. The EDI datasets have DOIs and you can find suggested citations on the EDI website. Feel free to cite this R package if it has helped you, though. 
 
 # Installation
 
@@ -51,7 +65,7 @@ collate(ids = c(2, 3, 4))
 
 ### Changing the output format
 
-`collate()` by defaults outputs a R list object. Change the "output" optional argument to "excel" or "csv" to also write to file a multi-tab Excel file or multiple CSV files respectively. The file(s) will be written to the current working directory by default, or a directory you specify in the optional argument `path`.
+`collate()` by defaults outputs a R list object. Change the "output" optional argument to "excel" or "csv" to also write to file a multi-tab Excel file or multiple CSV files respectively. The file(s) will be written to the current working directory by default, or a directory you specify in the optional argument `path`. Output file names will contain the current date, for tracking purposes.
 
 ```r
 collate(output = "excel", path = getwd())
