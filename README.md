@@ -45,6 +45,7 @@ This single function call queries EDI for the latest BLE LTER Core Program updat
 
 `collate()` by default fetches and collates all water and sediment datasets from the Core Program.
 
+```
 Quick reference list of Core Program dataset IDs:
 2: water column dissolved organic carbon (DOC), total dissolved nitrogen
 3: CTD/TCM mooring data, YSI data (only YSI data is collated by this R package)
@@ -54,6 +55,7 @@ Quick reference list of Core Program dataset IDs:
 13: water column chlorophyll
 14: water column and sediment nutrient concentrations
 18: sediment carbon and nitrogen content, d13C and d15N
+```
 
 You can also call `BLEdatatools::which_ids()` in the R console to quickly reference this list.
 
