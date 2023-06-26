@@ -17,15 +17,15 @@ library(BLEdatatools)
 
 # Usage
 
-## One stop shop
+## Start here: the one-stop shop function
 
 ```r
 collate()
 ```
 
-This single function call queries EDI for the latest BLE LTER Core Program updates, downloads the relevant files, and finally collates the observations according to time and location to output a collated or "master" data sheet of Core Program water and sediment data. 
+This single function call queries EDI for the latest BLE LTER Core Program updates, downloads the relevant files, and finally collates the observations according to time and location to output two collated or "master" data sheets, one each of Core Program water and sediment data, plus dataset- and column-level metadata.
 
-## Customizing collated data output
+## Customizations
 
 ### Choosing specific datasets to include
 
