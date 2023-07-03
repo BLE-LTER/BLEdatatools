@@ -102,3 +102,36 @@ collate(skip_metadata = TRUE)
 ```
 
 Note that variable names in the metadata summaries will not correspond 100% to the order and names of the collated data columns. For example, "ammonium_umol_N_L" in metadata may become "ammonium_umol_N_L_rep1" and "ammonium_umol_N_L_rep2" (see above about the avg_rep argument). You should be able to easily deduct which column in the metadata corresponds to which column in the data. This is because the metadata summaries is lifted wholesale, as-is from the metadata versions on EDI, while the data columns may undergo additional processing (such as described above).
+
+# Other functionalities
+
+## Quickly look up dataset IDs used in collation
+
+Intended for R console use only, `which_ids()` conveniently returns, as a R console message, a quick-and-dirty summary of the BLE Core Program IDs used in this R package's `collate()`. 
+
+```r
+which_ids()
+```
+
+## Lookup BLE dataset IDs
+
+Another way to quickly look up all BLE dataset IDs and their information is `search_ble_packages()`. Compared to `which_ids`, this function returns an in-memory data.frame about all BLE dataset IDs. 
+
+```r
+search_ble_packages()
+```
+
+For customization options, please see this function's documentation.
+
+## Download any BLE data package
+
+We also include a convenience function, `download_data()`, to programmatically download the latest version of any BLE data package (not just the Core Prorgram water/sediment ones slated for collation using `collate()`). `download_data()` supports downloading one package at a time, either the entire package, or you can also cherry-pick one entity (file) from the data package to download.
+
+```r
+download_data(identifier = 1, 
+              entity_number = 1,
+              path = getwd(),
+              write = TRUE)
+```
+
+In the above example: `identifier` indicates the EDI package with package ID `knb-lter-ble.1.7`, which is the latest version  of that package as of this writing (2023-07-03). `entity_number` indicates the first data entity/file in this package. Leave this argument if you'd like to download all data entities. Specify `path` and `write` if you'd like to write to file. 
