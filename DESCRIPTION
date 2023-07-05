@@ -2,12 +2,12 @@ Package: BLEdatatools
 Title: R Tools to work with data from the Beaufort Lagoon Ecosystems LTER (BLE LTER) research program
 Version: 0.0.0.9000
 Authors@R: 
-    person(first = "An Thai", last = "Nguyen", email = "an.thai.nguyen.38@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID")),
+    c(person(first = "An Thai", last = "Nguyen", email = "an.thai.nguyen.38@gmail.com", role = c("aut", "cre")),
            person(first = "Emily", last = "Bristol", email = "bristol@utexas.edu", role = c("aut")),
            person(first = "Sasha", last = "Peterson", email = "speterson2@miners.utep.edu", role = c("aut")), 
            person(first = "Kaylie", last = "Plumb", email = "kaylie.plumb@austin.utexas.edu", role = c("aut")),
            person(first = "Alina", last = "Spera", email = "aspera@miners.utep.edu", role = c("aut"))
+           )
 Description: [BLE LTER](https://ble.lternet.edu) publishes its Core Program data across many data packages' "IDs" in the EDI repository. For example, different measurements, such as dissolved organic carbon (DOC) and concentrations of nutrients, done on the same container of water sampled from a Beaufort Sea lagoon, will be accessible from different places. While this serves our data publishing process well, it can be challenging for some of our data users who wants to see all the available data in one place. This package aims to provide a reproducible and trackable way to join the latest data according to time and location. 
 License: MIT + file LICENSE
 Encoding: UTF-8
