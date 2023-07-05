@@ -1,0 +1,107 @@
+node,lagoon,station,season,date_collected,water_column_position,ammonia_umol_N_L,phosphate_umol_P_L,silicate_umol_SiO2_L,nitrate_nitrite_umol_N_L,flag_NH3,flag_PO4,flag_SiO2,flag_NO23,collection_method,station_name,latitude,longitude,habitat_type,station_sampling_priority
+Central,Simpson,KUR1,break up,2019-06-29,surface,0,NA,13.8,NA,BD,BD,VALID,BD,pump,Kuparuk River Station 1,70.3261,-148.9502,river,river
+Central,Simpson,KUR1,open water,2019-08-05,surface,0.1,NA,31.8,2.9,VALID,BD,VALID,VALID,pump,Kuparuk River Station 1,70.3261,-148.9502,river,river
+Central,Simpson,SILD1,open water,2018-07-26,bottom,0,0.2,NA,1.4,VALID,VALID,NS,VALID,pump,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2018-07-26,surface,NA,NA,NA,1.4,NS,NS,NS,VALID,pump,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,under ice,2019-04-21,bottom,6.6,5.3,23.4,6.4,VALID,VALID,VALID,VALID,pump,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,under ice,2019-04-21,surface,1.4,3.9,15.9,4.3,VALID,VALID,VALID,VALID,pump,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,break up,2019-06-30,bottom,0.6,0.8,5.5,0.7,VALID,VALID,VALID,BD,pump,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,break up,2019-06-30,surface,0.7,0.3,3.7,0,VALID,VALID,VALID,BD,pump,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2019-08-05,bottom,0.8,0.8,5.5,0.7,VALID,VALID,VALID,BD,pump,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD1,open water,2019-08-05,surface,1.1,0.7,8.2,0,VALID,VALID,VALID,BD,pump,Simpson Lagoon Deep Station 1,70.53706667,-149.77535,lagoon,primary
+Central,Simpson,SILD2,open water,2019-08-05,bottom,0.8,1,5,NA,VALID,VALID,VALID,BD,pump,Simpson Lagoon Deep Station 2,70.53988333,-149.4765833,lagoon,secondary
+Central,Simpson,SILD2,open water,2019-08-05,surface,0.9,1.2,5,1.4,VALID,VALID,VALID,VALID,pump,Simpson Lagoon Deep Station 2,70.53988333,-149.4765833,lagoon,secondary
+Central,Simpson,SILS1,break up,2019-06-29,surface,NA,1.8,2.2,10,HIGH,VALID,VALID,VALID,pump,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS1,open water,2019-08-05,surface,0.7,0.1,17.5,1.4,VALID,BD,VALID,BD,pump,Simpson Lagoon Shallow Station 1,70.50396,-149.70968,lagoon,primary
+Central,Simpson,SILS2,open water,2019-08-05,surface,0.6,0.1,5,0,VALID,BD,VALID,BD,pump,Simpson Lagoon Shallow Station 2,70.4952,-149.42349,lagoon,secondary
+Central,Stefansson,SAR1,break up,2019-06-27,surface,NA,NA,19.7,1.4,BD,BD,VALID,BD,pump,Sagavanirktok River Station 1,70.2493,-148.3069,river,river
+Central,Stefansson,SAR1,open water,2019-08-03,surface,0,NA,32.1,6.4,BD,BD,VALID,VALID,pump,Sagavanirktok River Station 1,70.2493,-148.3069,river,river
+Central,Stefansson,STLD1,under ice,2019-04-20,bottom,NA,4.8,11.4,2.9,HIGH,VALID,VALID,VALID,pump,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,under ice,2019-04-20,surface,NA,4.8,19.7,7.1,HIGH,VALID,VALID,VALID,pump,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,break up,2019-06-27,bottom,1.6,5.5,8.7,2.9,VALID,VALID,VALID,VALID,pump,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,break up,2019-06-27,surface,0.3,0.8,11.1,1.4,VALID,VALID,VALID,BD,pump,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD1,open water,2019-08-03,surface,0.6,0.8,3.3,0,VALID,VALID,VALID,BD,pump,Stefansson Sound Deep Station 1,70.37226667,-148.0239333,lagoon,primary
+Central,Stefansson,STLD2,under ice,2019-04-19,bottom,3.6,5.5,10.9,2.9,VALID,VALID,VALID,VALID,pump,Stefansson Sound Deep Station 2,70.32078333,-147.75615,lagoon,secondary
+Central,Stefansson,STLD2,under ice,2019-04-19,surface,1,4.3,9.9,2.9,VALID,VALID,VALID,VALID,pump,Stefansson Sound Deep Station 2,70.32078333,-147.75615,lagoon,secondary
+Central,Stefansson,STLD2,open water,2019-08-03,bottom,0.8,1,5,1.4,VALID,VALID,VALID,BD,pump,Stefansson Sound Deep Station 2,70.32078333,-147.75615,lagoon,secondary
+Central,Stefansson,STLD2,open water,2019-08-03,surface,1,0.7,6,1.4,VALID,VALID,VALID,BD,pump,Stefansson Sound Deep Station 2,70.32078333,-147.75615,lagoon,secondary
+Central,Stefansson,STLS1,break up,2019-06-27,surface,NA,0.1,17.6,0.7,BD,VALID,VALID,BD,pump,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS1,open water,2019-08-03,surface,0.7,0.2,12.9,0.7,VALID,VALID,VALID,BD,pump,Stefansson Sound Shallow Station 1,70.33994,-147.97884,lagoon,primary
+Central,Stefansson,STLS2,break up,2019-06-28,surface,0.1,0,7.9,0,VALID,BD,VALID,BD,pump,Stefansson Sound Shallow Station 2,70.29324,-147.80153,lagoon,secondary
+Central,Stefansson,STLS2,open water,2019-08-03,surface,0.6,0.3,5.7,NA,VALID,VALID,VALID,BD,pump,Stefansson Sound Shallow Station 2,70.29324,-147.80153,lagoon,secondary
+East,Jago,JALD1,open water,2018-08-02,bottom,1.1,1,NA,1.4,VALID,VALID,NS,VALID,pump,Jago Lagoon Deep Station 1,70.1040667,-143.48925,lagoon,secondary
+East,Jago,JALD1,open water,2018-08-02,surface,0,0,NA,1.4,VALID,VALID,NS,VALID,pump,Jago Lagoon Deep Station 1,70.1040667,-143.48925,lagoon,secondary
+East,Jago,JALD1,open water,2019-08-08,bottom,0.7,1.2,6.4,2.1,VALID,VALID,VALID,VALID,pump,Jago Lagoon Deep Station 1,70.1040667,-143.48925,lagoon,secondary
+East,Jago,JALD1,open water,2019-08-08,surface,0.6,0.8,6.5,0,VALID,VALID,VALID,BD,pump,Jago Lagoon Deep Station 1,70.1040667,-143.48925,lagoon,secondary
+East,Jago,JALD2,open water,2018-08-01,bottom,0.1,0.5,NA,2.1,VALID,VALID,NS,VALID,pump,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2018-08-01,surface,0.1,0.1,NA,1.4,VALID,VALID,NS,VALID,pump,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,under ice,2019-04-27,bottom,20.2,3.3,20.3,2.1,VALID,VALID,VALID,VALID,pump,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,under ice,2019-04-27,surface,0.4,6,13.9,5.7,VALID,VALID,VALID,VALID,pump,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,break up,2019-06-21,bottom,NA,5,13.2,1.4,HIGH,VALID,VALID,BD,pump,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,break up,2019-06-21,surface,0.1,0,5.5,NA,VALID,BD,VALID,BD,pump,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2019-08-08,bottom,0.8,2.3,3,0,VALID,VALID,VALID,BD,pump,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALD2,open water,2019-08-08,surface,0.7,1.8,2,0,VALID,VALID,VALID,BD,pump,Jago Lagoon Deep Station 2,70.1068333,-143.4434667,lagoon,primary
+East,Jago,JALS1,open water,2018-08-02,surface,0.8,NA,NA,2.1,VALID,NS,NS,VALID,pump,Jago Lagoon Shallow Station 1,70.08801,-143.45609,lagoon,secondary
+East,Jago,JALS1,open water,2019-08-08,surface,2.9,0.4,4.5,0,VALID,VALID,VALID,BD,pump,Jago Lagoon Shallow Station 1,70.08801,-143.45609,lagoon,secondary
+East,Jago,JALS2,open water,2018-08-01,surface,0.1,0,NA,1.4,VALID,VALID,NS,VALID,pump,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,break up,2019-06-23,surface,NA,0.1,5.8,NA,BD,VALID,VALID,BD,pump,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JALS2,open water,2019-08-08,surface,0.4,0.2,3.4,0,VALID,VALID,VALID,BD,pump,Jago Lagoon Shallow Station 2,70.0919,-143.37767,lagoon,primary
+East,Jago,JAR1,open water,2018-07-23,surface,0.2,NA,NA,3.6,VALID,NS,NS,VALID,pump,Jago River Station 1,70.09164,-143.31685,river,river
+East,Jago,JAR1,break up,2019-06-22,surface,NA,0.1,9.2,NA,BD,BD,VALID,BD,pump,Jago River Station 1,70.09164,-143.31685,river,river
+East,Kaktovik,KALD1,open water,2018-08-03,bottom,0.2,1.3,NA,1.4,VALID,VALID,NS,VALID,pump,Kaktovik Lagoon Deep Station 1,70.089,-143.6233167,lagoon,secondary
+East,Kaktovik,KALD1,open water,2018-08-03,surface,NA,0,NA,1.4,NS,VALID,NS,VALID,pump,Kaktovik Lagoon Deep Station 1,70.089,-143.6233167,lagoon,secondary
+East,Kaktovik,KALD1,under ice,2019-04-28,bottom,3.1,4.5,15.7,5,VALID,VALID,VALID,VALID,pump,Kaktovik Lagoon Deep Station 1,70.089,-143.6233167,lagoon,secondary
+East,Kaktovik,KALD1,under ice,2019-04-28,surface,2.5,4.4,9.7,2.1,VALID,VALID,VALID,VALID,pump,Kaktovik Lagoon Deep Station 1,70.089,-143.6233167,lagoon,secondary
+East,Kaktovik,KALD1,open water,2019-08-08,bottom,0.5,0.4,3.3,0,VALID,VALID,VALID,BD,pump,Kaktovik Lagoon Deep Station 1,70.089,-143.6233167,lagoon,secondary
+East,Kaktovik,KALD1,open water,2019-08-08,surface,0.6,0.2,2.5,NA,VALID,VALID,VALID,HIGH,pump,Kaktovik Lagoon Deep Station 1,70.089,-143.6233167,lagoon,secondary
+East,Kaktovik,KALD2,open water,2018-08-04,bottom,0.1,1.3,NA,1.4,VALID,VALID,NS,VALID,pump,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2018-08-04,surface,0.1,NA,NA,1.4,VALID,NS,NS,VALID,pump,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,under ice,2019-04-26,bottom,4.4,4,21.8,3.6,VALID,VALID,VALID,VALID,pump,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,under ice,2019-04-26,surface,1.5,4.9,12.1,2.1,VALID,VALID,VALID,VALID,pump,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,break up,2019-06-21,bottom,0.6,4.3,0.1,NA,VALID,VALID,VALID,BD,pump,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,break up,2019-06-21,surface,0.2,0.7,3.2,0,VALID,VALID,VALID,BD,pump,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2019-08-08,bottom,0.8,0.5,3.6,1.4,VALID,VALID,VALID,BD,pump,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALD2,open water,2019-08-08,surface,0.6,0.3,3.1,NA,VALID,VALID,VALID,BD,pump,Kaktovik Lagoon Deep Station 2,70.1009333,-143.5709,lagoon,primary
+East,Kaktovik,KALS1,open water,2018-08-03,surface,0,0,NA,1.4,VALID,VALID,NS,VALID,pump,Kaktovik Lagoon Shallow Station 1,70.08161,-143.55383,lagoon,secondary
+East,Kaktovik,KALS1,open water,2019-08-10,surface,0.7,0.4,5.5,0.7,VALID,VALID,VALID,BD,pump,Kaktovik Lagoon Shallow Station 1,70.08161,-143.55383,lagoon,secondary
+East,Kaktovik,KALS2,open water,2018-08-03,surface,0,0.1,NA,1.4,VALID,VALID,NS,VALID,pump,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,break up,2019-06-23,surface,1.3,1.8,2.8,NA,VALID,VALID,VALID,BD,pump,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,Kaktovik,KALS2,open water,2019-08-10,surface,0.6,0.3,5.2,0,VALID,VALID,VALID,BD,pump,Kaktovik Lagoon Shallow Station 2,70.11949,-143.5372,lagoon,primary
+East,not applicable,Beaufort2018,open water,2018-08-04,surface,0.3,3.7,NA,2.9,VALID,VALID,NS,VALID,pump,"Beaufort Sea, sampling site 2018",70.13337,-143.70329,ocean,ocean
+East,not applicable,Beaufort2019,open water,2019-08-05,surface,0.9,0.4,4.9,0,VALID,VALID,VALID,BD,pump,"Beaufort Sea, sampling site 2019",70.44325,-148.739283,ocean,ocean
+West,Elson East,AVR1,open water,2018-07-26,surface,9.5,NA,NA,NA,VALID,NS,NS,HIGH,pump,Avak Creek Station 1,71.14711,-156.19139,river,river
+West,Elson East,AVR1,open water,2019-08-05,surface,7.2,1.3,1.6,0.7,VALID,VALID,VALID,BD,pump,Avak Creek Station 1,71.14711,-156.19139,river,river
+West,Elson East,EELD1,under ice,2019-04-16,bottom,2,5.6,22.3,4.3,VALID,VALID,VALID,VALID,pump,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,under ice,2019-04-16,surface,2.7,6.1,23.7,2.9,VALID,VALID,VALID,VALID,pump,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,open water,2019-07-31,bottom,0.8,0.7,2.4,0.7,VALID,VALID,VALID,BD,pump,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD1,open water,2019-07-31,surface,0.8,0.9,2.6,0.7,VALID,VALID,VALID,BD,pump,Elson East Lagoon Deep Station 1,71.29286,-156.19644,lagoon,primary
+West,Elson East,EELD2,open water,2019-07-31,bottom,0.6,1,2.9,1.4,VALID,VALID,VALID,BD,pump,Elson East Lagoon Deep Station 2,71.25211,-156.04619,lagoon,secondary
+West,Elson East,EELD2,open water,2019-07-31,surface,0.6,0.8,2.1,0.7,VALID,VALID,VALID,BD,pump,Elson East Lagoon Deep Station 2,71.25211,-156.04619,lagoon,secondary
+West,Elson East,EELS1,break up,2019-06-22,surface,NA,5.3,0.6,2.1,HIGH,VALID,VALID,VALID,pump,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS1,open water,2019-07-31,surface,1.1,0.9,2.7,0.7,VALID,VALID,VALID,BD,pump,Elson East Lagoon Shallow Station 1,71.2629,-156.27286,lagoon,primary
+West,Elson East,EELS2,open water,2019-07-31,surface,0.9,0.6,2.2,0,VALID,VALID,VALID,BD,pump,Elson East Lagoon Shallow Station 2,71.24097,-156.09151,lagoon,secondary
+West,Elson East,NNR1,open water,2018-07-27,surface,0.1,NA,NA,1.4,VALID,NS,NS,VALID,pump,No Name River Station 1,71.2392833,-156.33505,river,river
+West,Elson East,NNR1,break up,2019-06-24,surface,0.2,2.5,0.2,NA,VALID,VALID,VALID,BD,grab,No Name River Station 1,71.2392833,-156.33505,river,river
+West,Elson East,NNR1,open water,2019-08-02,surface,0.2,NA,4.3,NA,VALID,BD,VALID,BD,grab,No Name River Station 1,71.2392833,-156.33505,river,river
+West,Elson West,EWLD1,open water,2018-07-28,bottom,0.1,2,NA,1.4,VALID,VALID,NS,VALID,pump,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2018-07-28,surface,NA,NA,NA,0.7,NS,NS,NS,VALID,pump,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,under ice,2019-04-14,bottom,3.7,2.8,22.1,5,VALID,VALID,VALID,VALID,pump,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,under ice,2019-04-14,surface,3,6.4,23.5,3.6,VALID,VALID,VALID,VALID,pump,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-23,bottom,14.8,1.6,4.8,1.4,VALID,VALID,VALID,BD,pump,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-23,surface,NA,3.1,5.4,2.1,HIGH,VALID,VALID,VALID,pump,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-24,bottom,1.3,1.5,6.2,0.7,VALID,VALID,VALID,BD,pump,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,break up,2019-06-24,surface,0.3,1,3,0,VALID,VALID,VALID,BD,pump,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2019-08-05,bottom,0.9,3.7,7.3,1.4,VALID,VALID,VALID,BD,pump,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD1,open water,2019-08-05,surface,0.8,3,4.6,0.7,VALID,VALID,VALID,BD,grab,Elson West Lagoon Deep Station 1,71.3379,-156.4165,lagoon,primary
+West,Elson West,EWLD2,under ice,2019-04-15,bottom,3.1,2.3,20,3.6,VALID,VALID,VALID,VALID,pump,Elson West Lagoon Deep Station 2,71.31048,-156.28778,lagoon,secondary
+West,Elson West,EWLD2,under ice,2019-04-15,surface,3,5.8,23.2,3.6,VALID,VALID,VALID,VALID,pump,Elson West Lagoon Deep Station 2,71.31048,-156.28778,lagoon,secondary
+West,Elson West,EWLD2,open water,2019-08-05,bottom,0.9,2.9,4.9,2.1,VALID,VALID,VALID,VALID,pump,Elson West Lagoon Deep Station 2,71.31048,-156.28778,lagoon,secondary
+West,Elson West,EWLD2,open water,2019-08-05,surface,0.8,1.9,3.1,0,VALID,VALID,VALID,BD,grab,Elson West Lagoon Deep Station 2,71.31048,-156.28778,lagoon,secondary
+West,Elson West,EWLS1,open water,2018-07-29,surface,0.7,1,NA,1.4,VALID,VALID,NS,VALID,pump,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,break up,2019-06-25,surface,0.3,0.4,0.4,NA,VALID,VALID,VALID,BD,pump,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS1,open water,2019-08-05,surface,1,2.8,5.9,1.4,VALID,VALID,VALID,VALID,pump,Elson West Lagoon Shallow Station 1,71.32894,-156.56479,lagoon,primary
+West,Elson West,EWLS2,break up,2019-06-22,surface,NA,3.6,4,3.6,HIGH,VALID,VALID,VALID,pump,Elson West Lagoon Shallow Station 2,71.28187,-156.42513,lagoon,secondary
+West,Elson West,EWLS2,open water,2019-08-05,surface,6.2,2.8,3,1.4,VALID,VALID,VALID,BD,pump,Elson West Lagoon Shallow Station 2,71.28187,-156.42513,lagoon,secondary
+West,Elson West,MYR1,open water,2018-07-27,surface,0.1,NA,NA,1.4,VALID,NS,NS,VALID,pump,Mayoeak River Station 1,71.2480905,-156.4661025,river,river
+West,Elson West,MYR1,break up,2019-06-24,surface,9.7,1.7,1.8,19.3,VALID,VALID,VALID,VALID,grab,Mayoeak River Station 1,71.2480905,-156.4661025,river,river
+West,Elson West,MYR1,open water,2019-08-02,surface,0.6,0.1,24,0.7,VALID,BD,VALID,BD,grab,Mayoeak River Station 1,71.2480905,-156.4661025,river,river
